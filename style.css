@@ -1,0 +1,26 @@
+.lkt-menu-entry-toggle-triangle {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #FF4532 transparent transparent transparent;
+    transform: rotate(0deg);
+    transition: all linear 200ms;
+}
+
+.lkt-menu-entry-toggle-triangle.is-opened {
+    transform: rotatez(180deg);
+}
+
+.lkt-entry-content {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.lkt-menu-entry-toggle {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

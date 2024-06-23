@@ -1,0 +1,54 @@
+:root {
+    /** Font */
+    --lkt-menu-font-family: system-ui, Helvetica;
+    --lkt-menu-font-size: 17px;
+    --lkt-menu-font-weight: 400;
+    --lkt-menu-line-height: 1;
+    --lkt-menu-text-align: left;
+    --lkt-menu-text-decoration: none;
+    --lkt-menu-text-decoration-hover: none;
+
+    /** Sizing */
+    --lkt-menu-width: 100%;
+    --lkt-menu-min-width: 150px;
+    --lkt-menu-min-height: 35px;
+    --lkt-menu-padding: 7px;
+    --lkt-menu-gap: 5px;
+
+    /** Border */
+    --lkt-menu-border-radius: 5px;
+    --lkt-menu-border-width: 1px;
+    --lkt-menu-border-width-hover: 1px;
+    --lkt-menu-border-style: solid;
+
+    /** Colors */
+    --lkt-menu-color: #ffffff;
+    --lkt-menu-bg: #007ebc;
+    --lkt-menu-border-color: #ddd;
+
+    /** Effects */
+    --lkt-menu-shadow: none;
+    --lkt-menu-transition: all linear 100ms;
+
+    /** State: hover */
+    --lkt-menu-color-hover: #ffffff;
+    --lkt-menu-bg-hover: #007ebc;
+    --lkt-menu-border-color-hover: #ddd;
+
+    /** State: Focus */
+    --lkt-menu-border-color-focus: var(--focus-color);
+    --lkt-menu-shadow-focus: 0 0 0 2px var(--focus-color);
+
+    /** State: Disabled */
+    --lkt-menu-color-disabled: var(--disabled-contrast);
+    --lkt-menu-bg-disabled: var(--disabled-color);
+    --lkt-menu-border-color-disabled: var(--disabled-color);
+
+    /** Internal image */
+    --lkt-button-img-max-width: 50px;
+    --lkt-button-img-max-height: 50px;
+
+    /** Split Button */
+    --lkt-button-split-arrow-width: 40px;
+    --lkt-button-split-arrow-bg: transparent;
+}
