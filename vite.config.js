@@ -31,6 +31,7 @@ export default {
                 'lkt-modal',
                 'lkt-modal-confirm',
                 'lkt-events',
+                'lkt-i18n',
                 'lkt-control-tools',
                 'lkt-string-tools',
             ],

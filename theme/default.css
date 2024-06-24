@@ -1,7 +1,7 @@
 :root {
     /** Font */
     --lkt-menu-font-family: system-ui, Helvetica;
-    --lkt-menu-font-size: 17px;
+    --lkt-menu-font-size: 16px;
     --lkt-menu-font-weight: 400;
     --lkt-menu-line-height: 1;
     --lkt-menu-text-align: left;
@@ -10,45 +10,25 @@
 
     /** Sizing */
     --lkt-menu-width: 100%;
-    --lkt-menu-min-width: 150px;
-    --lkt-menu-min-height: 35px;
-    --lkt-menu-padding: 7px;
-    --lkt-menu-gap: 5px;
-
-    /** Border */
-    --lkt-menu-border-radius: 5px;
-    --lkt-menu-border-width: 1px;
-    --lkt-menu-border-width-hover: 1px;
-    --lkt-menu-border-style: solid;
+    --lkt-menu-min-width: 0;
+    --lkt-menu-max-width: initial;
+    --lkt-menu-min-height: 0;
+    --lkt-menu-padding: 15px;
+    --lkt-menu-gap: 15px;
 
     /** Colors */
-    --lkt-menu-color: #ffffff;
-    --lkt-menu-bg: #007ebc;
-    --lkt-menu-border-color: #ddd;
+    --lkt-menu-bg: #ffffff;
+    --lkt-menu-color-toggle: #444444;
 
-    /** Effects */
-    --lkt-menu-shadow: none;
-    --lkt-menu-transition: all linear 100ms;
+    /** Sizing: Entries */
+    --lkt-menu-padding-entry: 15px;
+    --lkt-menu-padding-text: 0 0 0 30px;
+    --lkt-menu-padding-text-with-icon: 0;
+    --lkt-menu-padding-text-without-icon: 0;
 
-    /** State: hover */
-    --lkt-menu-color-hover: #ffffff;
-    --lkt-menu-bg-hover: #007ebc;
-    --lkt-menu-border-color-hover: #ddd;
+    /** Sizing: Children */
+    --lkt-menu-padding-children: 0 0 0 10px;
 
-    /** State: Focus */
-    --lkt-menu-border-color-focus: var(--focus-color);
-    --lkt-menu-shadow-focus: 0 0 0 2px var(--focus-color);
-
-    /** State: Disabled */
-    --lkt-menu-color-disabled: var(--disabled-contrast);
-    --lkt-menu-bg-disabled: var(--disabled-color);
-    --lkt-menu-border-color-disabled: var(--disabled-color);
-
-    /** Internal image */
-    --lkt-button-img-max-width: 50px;
-    --lkt-button-img-max-height: 50px;
-
-    /** Split Button */
-    --lkt-button-split-arrow-width: 40px;
-    --lkt-button-split-arrow-bg: transparent;
+    /** Colors: Outside */
+    --lkt-menu-bg-outside: rgba(255, 255, 255, 0.75);
 }

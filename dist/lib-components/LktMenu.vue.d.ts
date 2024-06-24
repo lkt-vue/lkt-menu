@@ -1,15 +1,19 @@
 import { MenuEntry } from "../classes/MenuEntry";
-declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<{
+declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<{
     modelValue?: MenuEntry[] | undefined;
 }>, {
     modelValue: () => never[];
-}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<{
+}>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+    "update:modelValue": (...args: any[]) => void;
+}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<{
     modelValue?: MenuEntry[] | undefined;
 }>, {
     modelValue: () => never[];
-}>>>, {
+}>>> & {
+    "onUpdate:modelValue"?: ((...args: any[]) => any) | undefined;
+}, {
     modelValue: MenuEntry[];
-}, {}>;
+}, {}>, Partial<Record<any, (_: {}) => any>>>;
 export default _default;
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
 type __VLS_TypePropsToRuntimeProps<T> = {
@@ -28,3 +32,8 @@ type __VLS_WithDefaults<P, D> = {
 type __VLS_Prettify<T> = {
     [K in keyof T]: T[K];
 } & {};
+type __VLS_WithTemplateSlots<T, S> = T & {
+    new (): {
+        $slots: S;
+    };
+};

@@ -1,21 +1,39 @@
-declare function j(n: any, o: any, e: any): {
+declare function se(n: any, t: any, l: any): {
     key: any;
     href: any;
-    text: any;
+    label: any;
+    icon: string;
     isOpened: boolean;
+    isActive: boolean;
     children: any[];
-    setChildren: (o: any) => h;
+    setChildren: (t: any) => K;
+    setOnClick: (t: any) => K;
+    onClick: any;
+    setIsActiveChecker: (t: any) => K;
+    isActiveChecker: any;
+    setIsActive: (t?: boolean) => K;
+    setLabel: (t: any) => K;
+    doClose: () => void;
 };
-declare namespace b {
+declare namespace ne {
     function install(n: any): void;
 }
-declare class h {
-    constructor(o: any, e: any, s: any);
+declare class K {
+    constructor(t: any, l: any, c: any);
     key: any;
     href: any;
-    text: any;
+    label: any;
+    icon: string;
     isOpened: boolean;
+    isActive: boolean;
     children: any[];
-    setChildren(o: any): this;
+    setChildren(t: any): this;
+    setOnClick(t: any): this;
+    onClick: any;
+    setIsActiveChecker(t: any): this;
+    isActiveChecker: any;
+    setIsActive(t?: boolean): this;
+    setLabel(t: any): this;
+    doClose(): void;
 }
-export { j as createMenuEntry, b as default };
+export { se as createMenuEntry, ne as default };

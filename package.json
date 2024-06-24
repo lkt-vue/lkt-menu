@@ -1,6 +1,6 @@
 {
   "name": "lkt-menu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "keywords": [
     "lkt",
@@ -53,6 +53,7 @@
     "lkt-control-tools": "^1.0.3",
     "lkt-events": "^1.0.2",
     "lkt-http-client": "^1.0.21",
+    "lkt-i18n": "^1.0.4",
     "lkt-loader": "^1.0.1",
     "lkt-modal-confirm": "^1.0.0",
     "lkt-string-tools": "^1.0.1",
