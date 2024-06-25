@@ -31,6 +31,7 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
         setIsActiveChecker: (fn: Function) => MenuEntry;
         setIsActive: (enabled?: boolean) => MenuEntry;
         setLabel: (str: string) => MenuEntry;
+        setIcon: (str: string) => MenuEntry;
         doClose: () => void;
     };
 }) => any>> & Partial<Record<any, (_: {}) => any>>>;

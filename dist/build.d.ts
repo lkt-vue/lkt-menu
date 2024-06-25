@@ -13,6 +13,7 @@ declare function se(n: any, t: any, l: any): {
     isActiveChecker: any;
     setIsActive: (t?: boolean) => K;
     setLabel: (t: any) => K;
+    setIcon: (t: any) => K;
     doClose: () => void;
 };
 declare namespace ne {
@@ -34,6 +35,7 @@ declare class K {
     isActiveChecker: any;
     setIsActive(t?: boolean): this;
     setLabel(t: any): this;
+    setIcon(t: any): this;
     doClose(): void;
 }
 export { se as createMenuEntry, ne as default };

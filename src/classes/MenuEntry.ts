@@ -45,6 +45,11 @@ export class MenuEntry {
         return this;
     }
 
+    setIcon(str: string) {
+        this.icon = str;
+        return this;
+    }
+
     doClose() {
         // if (this.parent) this.parent.doClose();
         this.isOpened = false;

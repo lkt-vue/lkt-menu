@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {MenuEntry} from "../classes/MenuEntry";
 import MenuItem from "../components/MenuItem.vue";
-import {computed, nextTick, ref, useSlots, watch} from "vue";
+import {computed, ref, useSlots, watch} from "vue";
 import {LktObject} from "lkt-ts-interfaces";
 import {fetchKeys} from "../functions/helpers";
 

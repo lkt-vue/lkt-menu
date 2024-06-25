@@ -15,5 +15,6 @@ export declare class MenuEntry {
     setIsActiveChecker(fn: Function): this;
     setIsActive(enabled?: boolean): this;
     setLabel(str: string): this;
+    setIcon(str: string): this;
     doClose(): void;
 }

@@ -19,6 +19,9 @@ class K {
   setLabel(t) {
     return this.label = t, this;
   }
+  setIcon(t) {
+    return this.icon = t, this;
+  }
   doClose() {
     this.isOpened = !1;
   }
