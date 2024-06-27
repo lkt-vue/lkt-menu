@@ -83,7 +83,7 @@ const O = (n, t) => (t.forEach((l) => {
                   }) : e.value.icon !== "" ? (u(), o("i", {
                     key: 1,
                     class: b(e.value.icon)
-                  }, "icon", 2)) : h("", !0)
+                  }, null, 2)) : h("", !0)
                 ])) : h("", !0),
                 e.value.label !== "" ? (u(), o("div", J, F(v.value), 1)) : h("", !0)
               ])

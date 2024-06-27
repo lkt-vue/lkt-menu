@@ -98,7 +98,7 @@ watch(entry, (v) => {
                                   :entry="entry"/>
                         </template>
                         <template v-else-if="entry.icon !== ''">
-                            <i :class="entry.icon">icon</i>
+                            <i :class="entry.icon"/>
                         </template>
                     </div>
                     <div class="lkt-menu-entry-text" v-if="entry.label !== ''">
