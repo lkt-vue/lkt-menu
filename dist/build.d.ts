@@ -1,4 +1,4 @@
-declare function se(n: any, t: any, l: any): {
+declare function he(n: any, t: any, s: any): {
     key: any;
     href: any;
     label: any;
@@ -6,21 +6,22 @@ declare function se(n: any, t: any, l: any): {
     isOpened: boolean;
     isActive: boolean;
     children: any[];
-    setChildren: (t: any) => K;
-    setOnClick: (t: any) => K;
+    setChildren: (t: any) => T;
+    setOnClick: (t: any) => T;
     onClick: any;
-    setIsActiveChecker: (t: any) => K;
+    setIsActiveChecker: (t: any) => T;
     isActiveChecker: any;
-    setIsActive: (t?: boolean) => K;
-    setLabel: (t: any) => K;
-    setIcon: (t: any) => K;
+    setIsActive: (t?: boolean) => T;
+    setLabel: (t: any) => T;
+    setIcon: (t: any) => T;
     doClose: () => void;
 };
-declare namespace ne {
+declare namespace ve {
     function install(n: any): void;
 }
-declare class K {
-    constructor(t: any, l: any, c: any);
+declare function me(n: any): boolean;
+declare class T {
+    constructor(t: any, s: any, v: any);
     key: any;
     href: any;
     label: any;
@@ -38,4 +39,4 @@ declare class K {
     setIcon(t: any): this;
     doClose(): void;
 }
-export { se as createMenuEntry, ne as default };
+export { he as createMenuEntry, ve as default, me as setMenuToggleSlot };

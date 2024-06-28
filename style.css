@@ -6,6 +6,14 @@
     height: 100%;
 }
 
+.lkt-menu-entry-toggle-inner {
+    transition: all linear 200ms;
+}
+
+.lkt-menu-entry-toggle-inner.is-opened {
+    transform: rotatez(180deg);
+}
+
 .lkt-menu-entry-toggle-triangle {
     width: 0;
     height: 0;
@@ -14,10 +22,6 @@
     border-color: var(--lkt-menu-color-toggle) transparent transparent transparent;
     transform: rotate(0deg);
     transition: all linear 200ms;
-}
-
-.lkt-menu-entry-toggle-triangle.is-opened {
-    transform: rotatez(180deg);
 }
 
 .lkt-entry-content {
