@@ -23,3 +23,5 @@ export const setMenuToggleSlot = (component: string|Component) => {
   Settings.toggleSlot = component;
   return true;
 }
+
+export {MenuEntry};

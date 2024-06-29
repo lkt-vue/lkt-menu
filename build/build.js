@@ -177,6 +177,7 @@ const Z = { class: "lkt-menu-entry-main" }, ee = { class: "lkt-entry-content" },
   }
 }, he = (n, t, s) => Q(new T(n, t, s)), me = (n) => (k.toggleSlot = n, !0);
 export {
+  T as MenuEntry,
   he as createMenuEntry,
   ve as default,
   me as setMenuToggleSlot
