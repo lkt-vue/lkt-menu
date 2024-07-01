@@ -4,6 +4,10 @@
     max-width: var(--lkt-menu-max-width);
     width: var(--lkt-menu-width);
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--lkt-menu-gap-entries);
 }
 
 .lkt-menu-entry-toggle-inner {
@@ -48,6 +52,7 @@
 .lkt-menu-entry-main {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .lkt-entry-content {

@@ -1,5 +1,5 @@
-declare class T {
-    constructor(t: any, s: any, v: any);
+declare class W {
+    constructor(t: any, s: any, d: any);
     key: any;
     href: any;
     label: any;
@@ -17,7 +17,7 @@ declare class T {
     setIcon(t: any): this;
     doClose(): void;
 }
-declare function he(n: any, t: any, s: any): {
+declare function me(n: any, t: any, s: any): {
     key: any;
     href: any;
     label: any;
@@ -25,18 +25,18 @@ declare function he(n: any, t: any, s: any): {
     isOpened: boolean;
     isActive: boolean;
     children: any[];
-    setChildren: (t: any) => T;
-    setOnClick: (t: any) => T;
+    setChildren: (t: any) => W;
+    setOnClick: (t: any) => W;
     onClick: any;
-    setIsActiveChecker: (t: any) => T;
+    setIsActiveChecker: (t: any) => W;
     isActiveChecker: any;
-    setIsActive: (t?: boolean) => T;
-    setLabel: (t: any) => T;
-    setIcon: (t: any) => T;
+    setIsActive: (t?: boolean) => W;
+    setLabel: (t: any) => W;
+    setIcon: (t: any) => W;
     doClose: () => void;
 };
-declare namespace ve {
+declare namespace he {
     function install(n: any): void;
 }
-declare function me(n: any): boolean;
-export { T as MenuEntry, he as createMenuEntry, ve as default, me as setMenuToggleSlot };
+declare function pe(n: any): boolean;
+export { W as MenuEntry, me as createMenuEntry, he as default, pe as setMenuToggleSlot };

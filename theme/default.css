@@ -15,6 +15,7 @@
     --lkt-menu-min-height: 0;
     --lkt-menu-padding: 15px;
     --lkt-menu-gap: 15px;
+    --lkt-menu-gap-entries: 0;
 
     /** Colors */
     --lkt-menu-bg: #ffffff;

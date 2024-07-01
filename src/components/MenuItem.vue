@@ -21,6 +21,8 @@ const slots = useSlots();
 
 const router = useRouter();
 
+const isActive = ref(false);
+
 const onClickToggle = () => {
         entry.value.isOpened = !entry.value.isOpened;
     },
@@ -41,6 +43,7 @@ const canRenderIcon = computed(() => {
     classes = computed(() => {
         let r = [];
         if (canRenderIcon.value) r.push('has-icon');
+        if (isActive.value) r.push('is-active');
         return r.join(' ');
     });
 
@@ -113,6 +116,7 @@ onMounted(() => {
                 :to="entry.href"
                 :on-click="onClick"
                 :is-active="computedIsActive"
+                @active="isActive = $e"
             >
                 <div class="lkt-entry-content">
                     <div class="lkt-menu-entry-icon" v-if="canRenderIcon">
