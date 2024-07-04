@@ -17,7 +17,7 @@ declare class x {
     setIcon(t: any): this;
     doClose(): void;
 }
-declare function pe(n: any, t: any, s: any): {
+declare function he(n: any, t: any, s: any): {
     key: any;
     href: any;
     label: any;
@@ -35,8 +35,8 @@ declare function pe(n: any, t: any, s: any): {
     setIcon: (t: any) => x;
     doClose: () => void;
 };
-declare namespace ke {
+declare namespace ve {
     function install(n: any): void;
 }
-declare function fe(n: any): boolean;
-export { x as MenuEntry, pe as createMenuEntry, ke as default, fe as setMenuToggleSlot };
+declare function me(n: any): boolean;
+export { x as MenuEntry, he as createMenuEntry, ve as default, me as setMenuToggleSlot };

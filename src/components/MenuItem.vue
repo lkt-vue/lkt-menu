@@ -90,6 +90,7 @@ const availableKeys = computed(() => {
 watch(() => props.modelValue, (v) => {
     entry.value = v
 }, {deep: true});
+
 watch(entry, (v) => {
     emit('update:modelValue', v)
 }, {deep: true});
@@ -108,10 +109,6 @@ onMounted(() => {
         if (opened) entry.value.isOpened = true;
     }
 });
-
-const isOpened = computed(() => {
-    return entry.value.isOpened;
-})
 </script>
 
 <template>
@@ -142,13 +139,13 @@ const isOpened = computed(() => {
 
             <div class="lkt-menu-entry-toggle" v-if="entry.children.length > 0" @click="onClickToggle">
                 <template v-if="hasToggleSlot">
-                    <component :is="toggleSlot" class="lkt-menu-entry-toggle-inner" :class="isOpened ? 'is-opened' : '' "/>
+                    <component :is="toggleSlot" class="lkt-menu-entry-toggle-inner" :class="entry.isOpened ? 'is-opened' : '' "/>
                 </template>
-                <div v-else class="lkt-menu-entry-toggle-inner lkt-menu-entry-toggle-triangle" :class="isOpened ? 'is-opened' : '' "/>
+                <div v-else class="lkt-menu-entry-toggle-inner lkt-menu-entry-toggle-triangle" :class="entry.isOpened ? 'is-opened' : '' "/>
             </div>
         </div>
-        <div class="lkt-menu-entry-children" v-show="isOpened">
-            <menu-item v-for="(child, i) in entry.children" v-model="entry.children[i]" :key="entry.children[i].key">
+        <div class="lkt-menu-entry-children" v-if="entry.isOpened">
+            <menu-item v-for="(_, i) in entry.children" v-model="entry.children[i]" :key="entry.children[i].key">
                 <template v-for="slot in entryIconSlots" v-slot:[slot]>
                     <slot :name="slot"/>
                 </template>
