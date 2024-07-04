@@ -6,12 +6,12 @@ import {LktObject} from "lkt-ts-interfaces";
 import {fetchKeys} from "../functions/helpers";
 
 const props = withDefaults(defineProps<{
-    modelValue?: MenuEntry[]
+    modelValue?: MenuEntry[],
 }>(), {
-    modelValue: () => []
+    modelValue: () => [],
 });
 
-const emit = defineEmits(['update:modelValue']);
+const emit = defineEmits(['update:modelValue', 'click-outside']);
 
 const slots = useSlots();
 
@@ -33,6 +33,10 @@ const availableKeys = computed(() => {
         return r;
     });
 
+const onClickOutside = () => {
+    emit('click-outside');
+}
+
 watch(() => props.modelValue, (v) => {
     entries.value = v;
 }, {deep: true})
@@ -51,7 +55,7 @@ watch(entries, (v) => {
                 </template>
             </menu-item>
         </div>
-        <div class="lkt-menu-outside"/>
+        <div class="lkt-menu-outside" v-on:click="onClickOutside"/>
     </div>
 </template>
 

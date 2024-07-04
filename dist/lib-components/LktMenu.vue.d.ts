@@ -5,12 +5,14 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<__
     modelValue: () => never[];
 }>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     "update:modelValue": (...args: any[]) => void;
+    "click-outside": (...args: any[]) => void;
 }, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<{
     modelValue?: MenuEntry[] | undefined;
 }>, {
     modelValue: () => never[];
 }>>> & {
     "onUpdate:modelValue"?: ((...args: any[]) => any) | undefined;
+    "onClick-outside"?: ((...args: any[]) => any) | undefined;
 }, {
     modelValue: MenuEntry[];
 }, {}>, Partial<Record<any, (_: {}) => any>>>;
