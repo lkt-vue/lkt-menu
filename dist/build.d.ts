@@ -1,5 +1,5 @@
 declare class x {
-    constructor(t: any, s: any, d: any);
+    constructor(t: any, n: any, i: any);
     key: any;
     href: any;
     label: any;
@@ -17,7 +17,7 @@ declare class x {
     setIcon(t: any): this;
     doClose(): void;
 }
-declare function he(n: any, t: any, s: any): {
+declare function ke(o: any, t: any, n: any): {
     key: any;
     href: any;
     label: any;
@@ -35,8 +35,8 @@ declare function he(n: any, t: any, s: any): {
     setIcon: (t: any) => x;
     doClose: () => void;
 };
-declare namespace ve {
-    function install(n: any): void;
+declare namespace fe {
+    function install(o: any): void;
 }
-declare function me(n: any): boolean;
-export { x as MenuEntry, he as createMenuEntry, ve as default, me as setMenuToggleSlot };
+declare function ye(o: any): boolean;
+export { x as MenuEntry, ke as createMenuEntry, fe as default, ye as setMenuToggleSlot };

@@ -26,6 +26,7 @@ export default {
                 'vue-router',
                 'lkt-loader',
                 'lkt-http-client',
+                'lkt-data-state',
                 'lkt-anchor',
                 'lkt-button',
                 'lkt-modal',

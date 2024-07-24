@@ -15,13 +15,10 @@ const props = withDefaults(defineProps<{
     modelValue: () => (new MenuEntry('', '', ''))
 });
 
-const entry = ref(props.modelValue);
-
-const slots = useSlots();
-
-const router = useRouter();
-
-const isActive = ref(false);
+const entry = ref(props.modelValue),
+    slots = useSlots(),
+    router = useRouter(),
+    isActive = ref(false);
 
 const onClickToggle = () => {
         entry.value.isOpened = !entry.value.isOpened;
