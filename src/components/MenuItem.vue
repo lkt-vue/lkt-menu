@@ -93,17 +93,19 @@ watch(entry, (v) => {
 }, {deep: true});
 
 onMounted(() => {
-    let currentRoute = router.currentRoute;
-    if (currentRoute.value.path === entry.value.href) {
-        entry.value.isOpened = true;
+    let currentRoute = router?.currentRoute;
+    if (currentRoute) {
+      if (currentRoute.value.path === entry.value.href) {
+          entry.value.isOpened = true;
 
-    } else if (entry.value.children.length > 0) {
-        let opened = false;
-        entry.value.children.forEach((child) => {
-            if (currentRoute.value.path === child.href) opened = true;
-        });
+      } else if (entry.value.children.length > 0) {
+          let opened = false;
+          entry.value.children.forEach((child) => {
+              if (currentRoute.value.path === child.href) opened = true;
+          });
 
-        if (opened) entry.value.isOpened = true;
+          if (opened) entry.value.isOpened = true;
+      }
     }
 });
 </script>

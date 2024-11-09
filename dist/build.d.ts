@@ -1,5 +1,5 @@
 declare class x {
-    constructor(t: any, n: any, i: any);
+    constructor(t: any, r: any, i: any);
     key: any;
     href: any;
     label: any;
@@ -17,7 +17,7 @@ declare class x {
     setIcon(t: any): this;
     doClose(): void;
 }
-declare function ke(o: any, t: any, n: any): {
+declare function ke(o: any, t: any, r: any): {
     key: any;
     href: any;
     label: any;

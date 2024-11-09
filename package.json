@@ -1,6 +1,6 @@
 {
   "name": "lkt-menu",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "",
   "keywords": [
     "lkt",
@@ -22,7 +22,7 @@
     "./theme": "./theme/default.css",
     "./theme/default": "./theme/default.css"
   },
-  "types": "./dist/index.d.ts",
+  "types": "./dist/build.d.ts",
   "files": [
     "dist/*",
     "src/**/*.vue",
