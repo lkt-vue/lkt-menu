@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import {MenuEntry} from "../classes/MenuEntry";
-import {computed, onMounted, ref, useSlots, watch} from "vue";
-import {LktObject} from "lkt-ts-interfaces";
-import {fetchKeys} from "../functions/helpers";
-import {__} from "lkt-i18n";
-import {useRouter} from "vue-router";
-import {Settings} from "../settings/Settings";
+  import { MenuEntry } from '../classes/MenuEntry';
+  import { computed, onMounted, ref, useSlots, watch } from 'vue';
+  import { LktObject } from 'lkt-ts-interfaces';
+  import { fetchKeys } from '../functions/helpers';
+  import { useRouter } from 'vue-router';
+  import { Settings } from '../settings/Settings';
+  import { extractI18nValue } from 'lkt-vue-kernel';
 
-const emit = defineEmits(['update:modelValue']);
+  const emit = defineEmits(['update:modelValue']);
 
 const props = withDefaults(defineProps<{
     modelValue?: MenuEntry
@@ -60,10 +60,7 @@ const availableKeys = computed(() => {
         return r;
     }),
     computedLabel = computed(() => {
-        if (entry.value.label.startsWith('__:')) {
-            return __(entry.value.label.substring(3));
-        }
-        return entry.value.label;
+        return extractI18nValue(entry.value.label);
     }),
     computedIsActive = computed(() => {
         if (entry.value.isActive) return true;

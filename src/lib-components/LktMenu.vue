@@ -8,9 +8,9 @@ import {DataState} from "lkt-data-state";
 import {httpCall, HTTPResponse} from "lkt-http-client";
 
 const props = withDefaults(defineProps<{
-    modelValue?: MenuEntry[],
+    modelValue?: MenuEntry[]
     resource?: string
-    resourceData: LktObject,
+    resourceData: LktObject
 }>(), {
     modelValue: () => [],
     resource: '',
@@ -98,7 +98,3 @@ loadResource();
         <div class="lkt-menu-outside" v-on:click="onClickOutside"/>
     </div>
 </template>
-
-<style scoped>
-
-</style>

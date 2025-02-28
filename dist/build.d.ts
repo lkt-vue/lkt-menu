@@ -1,5 +1,5 @@
-declare class x {
-    constructor(t: any, r: any, i: any);
+declare class H {
+    constructor(r: any, a: any, s: any);
     key: any;
     href: any;
     label: any;
@@ -7,17 +7,17 @@ declare class x {
     isOpened: boolean;
     isActive: boolean;
     children: any[];
-    setChildren(t: any): this;
-    setOnClick(t: any): this;
+    setChildren(r: any): this;
+    setOnClick(r: any): this;
     onClick: any;
-    setIsActiveChecker(t: any): this;
+    setIsActiveChecker(r: any): this;
     isActiveChecker: any;
-    setIsActive(t?: boolean): this;
-    setLabel(t: any): this;
-    setIcon(t: any): this;
+    setIsActive(r?: boolean): this;
+    setLabel(r: any): this;
+    setIcon(r: any): this;
     doClose(): void;
 }
-declare function ke(o: any, t: any, r: any): {
+declare function Xe(e: any, r: any, a: any): {
     key: any;
     href: any;
     label: any;
@@ -25,18 +25,18 @@ declare function ke(o: any, t: any, r: any): {
     isOpened: boolean;
     isActive: boolean;
     children: any[];
-    setChildren: (t: any) => x;
-    setOnClick: (t: any) => x;
+    setChildren: (r: any) => H;
+    setOnClick: (r: any) => H;
     onClick: any;
-    setIsActiveChecker: (t: any) => x;
+    setIsActiveChecker: (r: any) => H;
     isActiveChecker: any;
-    setIsActive: (t?: boolean) => x;
-    setLabel: (t: any) => x;
-    setIcon: (t: any) => x;
+    setIsActive: (r?: boolean) => H;
+    setLabel: (r: any) => H;
+    setIcon: (r: any) => H;
     doClose: () => void;
 };
-declare namespace fe {
-    function install(o: any): void;
+declare namespace Qe {
+    function install(e: any): void;
 }
-declare function ye(o: any): boolean;
-export { x as MenuEntry, ke as createMenuEntry, fe as default, ye as setMenuToggleSlot };
+declare function Ye(e: any): boolean;
+export { H as MenuEntry, Xe as createMenuEntry, Qe as default, Ye as setMenuToggleSlot };
