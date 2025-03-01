@@ -1,6 +1,6 @@
 import { Component, Plugin } from 'vue';
 import "../style.css";
-import { MenuEntry } from "./classes/MenuEntry";
+import { MenuEntry } from "lkt-vue-kernel";
 declare const LktMenu: Plugin;
 export default LktMenu;
 export declare const createMenuEntry: (key: string, href: string, label: string) => MenuEntry;

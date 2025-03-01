@@ -1,4 +1,4 @@
-import {MenuEntry} from "../classes/MenuEntry";
+import {MenuEntry} from "lkt-vue-kernel";
 
 export const fetchKeys = (r: string[], entries:MenuEntry[]): string[] => {
     entries.forEach(entry => {

@@ -1,23 +1,22 @@
 <script setup lang="ts">
-import {MenuEntry} from "../classes/MenuEntry";
-import MenuItem from "../components/MenuItem.vue";
-import {computed, ref, useSlots, watch} from "vue";
-import {LktObject} from "lkt-ts-interfaces";
-import {fetchKeys} from "../functions/helpers";
-import {DataState} from "lkt-data-state";
-import {httpCall, HTTPResponse} from "lkt-http-client";
+  import MenuItem from '../components/MenuItem.vue';
+  import { computed, ref, useSlots, watch } from 'vue';
+  import { LktObject } from 'lkt-ts-interfaces';
+  import { fetchKeys } from '../functions/helpers';
+  import { DataState } from 'lkt-data-state';
+  import { httpCall, HTTPResponse } from 'lkt-http-client';
+  import { getDefaultValues, Menu, MenuConfig } from 'lkt-vue-kernel';
 
-const props = withDefaults(defineProps<{
-    modelValue?: MenuEntry[]
-    resource?: string
-    resourceData: LktObject
-}>(), {
-    modelValue: () => [],
-    resource: '',
-    resourceData: () => ({}),
-});
+  const props = withDefaults(defineProps<MenuConfig>(), getDefaultValues(Menu));
 
-const emit = defineEmits(['update:modelValue', 'click-outside', 'loading', 'results', 'response', 'error']);
+const emit = defineEmits([
+  'update:modelValue',
+  'click-outside',
+  'loading',
+  'results',
+  'response',
+  'error'
+]);
 
 const slots = useSlots();
 

@@ -1,56 +1,43 @@
-import { MenuEntry } from "../classes/MenuEntry";
-import MenuItem from "../components/MenuItem.vue";
-import { LktObject } from "lkt-ts-interfaces";
-type __VLS_Props = {
-    modelValue?: MenuEntry[];
-    resource?: string;
-    resourceData: LktObject;
-};
+import MenuItem from '../components/MenuItem.vue';
+import { LktObject } from 'lkt-ts-interfaces';
+import { MenuConfig } from 'lkt-vue-kernel';
 declare const entries: import("vue").Ref<{
-    key: string;
-    href: string;
-    label: string;
-    icon: string;
-    onClick: Function | undefined;
-    isActiveChecker: Function | undefined;
-    isOpened: boolean;
-    isActive: boolean;
-    parent: /*elided*/ any | undefined;
-    children: /*elided*/ any[];
-    setChildren: (children: MenuEntry[]) => MenuEntry;
-    setOnClick: (fn: Function) => MenuEntry;
-    setIsActiveChecker: (fn: Function) => MenuEntry;
-    setIsActive: (enabled?: boolean) => MenuEntry;
-    setLabel: (str: string) => MenuEntry;
-    setIcon: (str: string) => MenuEntry;
-    doClose: () => void;
-}[], MenuEntry[] | {
-    key: string;
-    href: string;
-    label: string;
-    icon: string;
-    onClick: Function | undefined;
-    isActiveChecker: Function | undefined;
-    isOpened: boolean;
-    isActive: boolean;
-    parent: /*elided*/ any | undefined;
-    children: /*elided*/ any[];
-    setChildren: (children: MenuEntry[]) => MenuEntry;
-    setOnClick: (fn: Function) => MenuEntry;
-    setIsActiveChecker: (fn: Function) => MenuEntry;
-    setIsActive: (enabled?: boolean) => MenuEntry;
-    setLabel: (str: string) => MenuEntry;
-    setIcon: (str: string) => MenuEntry;
-    doClose: () => void;
+    key?: string | undefined;
+    href?: string | undefined;
+    label?: string | undefined;
+    icon?: string | undefined;
+    isActiveChecker?: Function | undefined;
+    isOpened?: boolean | undefined;
+    isActive?: boolean | undefined;
+    parent?: /*elided*/ any | undefined;
+    children?: /*elided*/ any[] | undefined;
+    events?: {
+        click?: Function | undefined;
+    } | undefined;
+    onClick?: Function | undefined;
+}[], import("lkt-vue-kernel").MenuEntryConfig[] | {
+    key?: string | undefined;
+    href?: string | undefined;
+    label?: string | undefined;
+    icon?: string | undefined;
+    isActiveChecker?: Function | undefined;
+    isOpened?: boolean | undefined;
+    isActive?: boolean | undefined;
+    parent?: /*elided*/ any | undefined;
+    children?: /*elided*/ any[] | undefined;
+    events?: {
+        click?: Function | undefined;
+    } | undefined;
+    onClick?: Function | undefined;
 }[]>;
 declare const entryIconSlots: import("vue").ComputedRef<LktObject>;
 declare const onClickOutside: () => void;
 declare const __VLS_ctx: InstanceType<__VLS_PickNotAny<typeof __VLS_self, new () => {}>>;
-declare var __VLS_5: any, __VLS_6: {};
+declare var __VLS_8: any, __VLS_9: {};
 type __VLS_Slots = __VLS_PrettifyGlobal<__VLS_OmitStringIndex<typeof __VLS_ctx.$slots> & {
-    [K in NonNullable<typeof __VLS_5>]?: (props: typeof __VLS_6) => any;
+    [K in NonNullable<typeof __VLS_8>]?: (props: typeof __VLS_9) => any;
 }>;
-declare const __VLS_self: import("vue").DefineComponent<__VLS_Props, {
+declare const __VLS_self: import("vue").DefineComponent<MenuConfig, {
     MenuItem: typeof MenuItem;
     entries: typeof entries;
     entryIconSlots: typeof entryIconSlots;
@@ -62,7 +49,7 @@ declare const __VLS_self: import("vue").DefineComponent<__VLS_Props, {
     "update:modelValue": (...args: any[]) => void;
     "click-outside": (...args: any[]) => void;
     response: (...args: any[]) => void;
-}, string, import("vue").PublicProps, Readonly<__VLS_Props> & Readonly<{
+}, string, import("vue").PublicProps, Readonly<MenuConfig> & Readonly<{
     onError?: ((...args: any[]) => any) | undefined;
     onLoading?: ((...args: any[]) => any) | undefined;
     onResults?: ((...args: any[]) => any) | undefined;
@@ -71,17 +58,17 @@ declare const __VLS_self: import("vue").DefineComponent<__VLS_Props, {
     onResponse?: ((...args: any[]) => any) | undefined;
 }>, {
     resource: string;
-    resourceData: LktObject;
-    modelValue: MenuEntry[];
+    resourceData: import("lkt-vue-kernel").LktObject;
+    modelValue: import("lkt-vue-kernel").MenuEntryConfig[];
 }, {}, {}, {}, string, import("vue").ComponentProvideOptions, false, {}, any>;
-declare const __VLS_component: import("vue").DefineComponent<__VLS_Props, {}, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+declare const __VLS_component: import("vue").DefineComponent<MenuConfig, {}, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     error: (...args: any[]) => void;
     loading: (...args: any[]) => void;
     results: (...args: any[]) => void;
     "update:modelValue": (...args: any[]) => void;
     "click-outside": (...args: any[]) => void;
     response: (...args: any[]) => void;
-}, string, import("vue").PublicProps, Readonly<__VLS_Props> & Readonly<{
+}, string, import("vue").PublicProps, Readonly<MenuConfig> & Readonly<{
     onError?: ((...args: any[]) => any) | undefined;
     onLoading?: ((...args: any[]) => any) | undefined;
     onResults?: ((...args: any[]) => any) | undefined;
@@ -90,8 +77,8 @@ declare const __VLS_component: import("vue").DefineComponent<__VLS_Props, {}, {}
     onResponse?: ((...args: any[]) => any) | undefined;
 }>, {
     resource: string;
-    resourceData: LktObject;
-    modelValue: MenuEntry[];
+    resourceData: import("lkt-vue-kernel").LktObject;
+    modelValue: import("lkt-vue-kernel").MenuEntryConfig[];
 }, {}, {}, {}, string, import("vue").ComponentProvideOptions, false, {}, any>;
 declare const _default: __VLS_WithSlots<typeof __VLS_component, __VLS_Slots>;
 export default _default;

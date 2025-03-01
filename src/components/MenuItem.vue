@@ -1,18 +1,18 @@
 <script setup lang="ts">
-  import { MenuEntry } from '../classes/MenuEntry';
+  import { extractI18nValue, LktObject, MenuEntry } from 'lkt-vue-kernel';
   import { computed, onMounted, ref, useSlots, watch } from 'vue';
-  import { LktObject } from 'lkt-ts-interfaces';
   import { fetchKeys } from '../functions/helpers';
   import { useRouter } from 'vue-router';
   import { Settings } from '../settings/Settings';
-  import { extractI18nValue } from 'lkt-vue-kernel';
 
-  const emit = defineEmits(['update:modelValue']);
+  const emit = defineEmits([
+    'update:modelValue'
+  ]);
 
 const props = withDefaults(defineProps<{
     modelValue?: MenuEntry
 }>(), {
-    modelValue: () => (new MenuEntry('', '', ''))
+    modelValue: () => (new MenuEntry())
 });
 
 const entry = ref(props.modelValue),
@@ -24,7 +24,15 @@ const onClickToggle = () => {
         entry.value.isOpened = !entry.value.isOpened;
     },
     onClick = () => {
-        if (entry.value.children.length > 0) onClickToggle();
+        if (entry.value.children?.length > 0) onClickToggle();
+
+        if (typeof entry.value.events?.click === 'function') {
+          entry.value.events.click({
+            entry: entry.value
+          });
+          return 1;
+        }
+
         if (typeof entry.value.onClick === 'function') {
             entry.value.onClick({
                 entry: entry.value
@@ -95,9 +103,9 @@ onMounted(() => {
       if (currentRoute.value.path === entry.value.href) {
           entry.value.isOpened = true;
 
-      } else if (entry.value.children.length > 0) {
+      } else if (entry.value.children?.length > 0) {
           let opened = false;
-          entry.value.children.forEach((child) => {
+          entry.value.children?.forEach((child) => {
               if (currentRoute.value.path === child.href) opened = true;
           });
 
@@ -133,7 +141,7 @@ onMounted(() => {
                 </div>
             </lkt-anchor>
 
-            <div class="lkt-menu-entry-toggle" v-if="entry.children.length > 0" @click="onClickToggle">
+            <div class="lkt-menu-entry-toggle" v-if="entry.children?.length > 0" @click="onClickToggle">
                 <template v-if="hasToggleSlot">
                     <component :is="toggleSlot" class="lkt-menu-entry-toggle-inner" :class="entry.isOpened ? 'is-opened' : '' "/>
                 </template>
