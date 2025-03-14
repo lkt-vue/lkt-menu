@@ -1,9 +1,8 @@
-import {App, Component, Plugin, reactive} from 'vue';
+import { App, Component, Plugin } from 'vue';
 
-import "../style.css";
-import {default as libComponent} from './lib-components/LktMenu.vue';
-import {MenuEntry} from "lkt-vue-kernel";
-import {Settings} from "./settings/Settings";
+import '../style.css';
+import { default as libComponent } from './lib-components/LktMenu.vue';
+import { Settings } from './settings/Settings';
 
 const LktMenu: Plugin = {
   install: (app: App) => {
@@ -14,18 +13,7 @@ const LktMenu: Plugin = {
 
 export default LktMenu;
 
-
-export const createMenuEntry = (key: string, href: string, label: string): MenuEntry => {
-  return reactive(new MenuEntry({
-    key,
-    href,
-    label
-  }));
-}
-
 export const setMenuToggleSlot = (component: string|Component) => {
   Settings.toggleSlot = component;
   return true;
 }
-
-export {MenuEntry};

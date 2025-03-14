@@ -1,13 +1,13 @@
 .lkt-menu {
-    background: var(--lkt-menu-bg);
-    padding: var(--lkt-menu-padding);
-    max-width: var(--lkt-menu-max-width);
-    width: var(--lkt-menu-width);
+    background: var(--lkt-menu--bg);
+    padding: var(--lkt-menu--padding);
+    max-width: var(--lkt-menu--max-width);
+    width: var(--lkt-menu--width);
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: var(--lkt-menu-gap-entries);
+    gap: var(--lkt-menu--entry--gap);
 }
 
 .lkt-menu-entry-toggle-inner {
@@ -23,7 +23,7 @@
     height: 0;
     border-style: solid;
     border-width: 10px 10px 0 10px;
-    border-color: var(--lkt-menu-color-toggle) transparent transparent transparent;
+    border-color: var(--lkt-menu--toggle--color) transparent transparent transparent;
     transform: rotate(0deg);
     transition: all linear 200ms;
 }
@@ -31,7 +31,7 @@
 .lkt-entry-content {
     display: inline-flex;
     flex-direction: row;
-    gap: var(--lkt-menu-gap);
+    gap: var(--lkt-menu--gap);
 }
 
 .lkt-menu-entry-toggle {
@@ -42,7 +42,7 @@
 }
 
 .lkt-menu-entry {
-    padding: var(--lkt-menu-padding-entry);
+    padding: var(--lkt-menu--entry--padding);
 }
 
 .lkt-menu-entry .lkt-anchor {
@@ -56,7 +56,7 @@
 }
 
 .lkt-entry-content {
-    font-size: var(--lkt-menu-font-size);
+    font-size: var(--lkt-menu--font-size);
     width: 100%;
 }
 
@@ -66,22 +66,22 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background: var(--lkt-menu-bg-outside);
+    background: var(--lkt-menu--outside--bg);
     z-index: -1;
 }
 
 .lkt-menu-entry-children {
-    padding: var(--lkt-menu-padding-children);
+    padding: var(--lkt-menu--children--padding);
 }
 
 .lkt-menu-entry-text {
-    padding: var(--lkt-menu-padding-text-without-icon);
+    padding: var(--lkt-menu--text-without-icon--padding);
 }
 
 .lkt-menu.has-icon .lkt-menu-entry-text {
-    padding: var(--lkt-menu-padding-text);
+    padding: var(--lkt-menu--text--padding);
 }
 
 .lkt-menu.has-icon .lkt-menu-entry-icon + .lkt-menu-entry-text {
-    padding: var(--lkt-menu-padding-text-with-icon);
+    padding: var(--lkt-menu--text-with-icon--padding);
 }

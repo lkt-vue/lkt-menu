@@ -1,35 +1,35 @@
 :root {
     /** Font */
-    --lkt-menu-font-family: system-ui, Helvetica;
-    --lkt-menu-font-size: 16px;
-    --lkt-menu-font-weight: 400;
-    --lkt-menu-line-height: 1;
-    --lkt-menu-text-align: left;
-    --lkt-menu-text-decoration: none;
-    --lkt-menu-text-decoration-hover: none;
+    --lkt-menu--font-family: system-ui, Helvetica;
+    --lkt-menu--font-size: 16px;
+    --lkt-menu--font-weight: 400;
+    --lkt-menu--line-height: 1;
+    --lkt-menu--text-align: left;
+    --lkt-menu--text-decoration: none;
+    --lkt-menu--text-decoration--hover: none;
 
     /** Sizing */
-    --lkt-menu-width: 100%;
-    --lkt-menu-min-width: 0;
-    --lkt-menu-max-width: initial;
-    --lkt-menu-min-height: 0;
-    --lkt-menu-padding: 15px;
-    --lkt-menu-gap: 15px;
-    --lkt-menu-gap-entries: 0;
+    --lkt-menu--width: 100%;
+    --lkt-menu--min-width: 0;
+    --lkt-menu--max-width: initial;
+    --lkt-menu--min-height: 0;
+    --lkt-menu--padding: 15px;
+    --lkt-menu--gap: 15px;
+    --lkt-menu--entry--gap: 0;
 
     /** Colors */
-    --lkt-menu-bg: #ffffff;
-    --lkt-menu-color-toggle: #444444;
+    --lkt-menu--bg: #ffffff;
+    --lkt-menu--toggle--color: #444444;
 
     /** Sizing: Entries */
-    --lkt-menu-padding-entry: 15px;
-    --lkt-menu-padding-text: 0 0 0 30px;
-    --lkt-menu-padding-text-with-icon: 0;
-    --lkt-menu-padding-text-without-icon: 0;
+    --lkt-menu--entry--padding: 15px;
+    --lkt-menu--text--padding: 0 0 0 30px;
+    --lkt-menu--text-with-icon--padding: 0;
+    --lkt-menu--text-without-icon--padding: 0;
 
     /** Sizing: Children */
-    --lkt-menu-padding-children: 0 0 0 10px;
+    --lkt-menu--children--padding: 0 0 0 10px;
 
     /** Colors: Outside */
-    --lkt-menu-bg-outside: rgba(255, 255, 255, 0.75);
+    --lkt-menu--outside--bg: rgba(255, 255, 255, 0.75);
 }

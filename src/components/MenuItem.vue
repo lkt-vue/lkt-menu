@@ -1,21 +1,21 @@
 <script setup lang="ts">
-  import { extractI18nValue, LktObject, MenuEntry } from 'lkt-vue-kernel';
-  import { computed, onMounted, ref, useSlots, watch } from 'vue';
-  import { fetchKeys } from '../functions/helpers';
-  import { useRouter } from 'vue-router';
-  import { Settings } from '../settings/Settings';
+    import { MenuEntryConfig, MenuEntryType } from 'lkt-vue-kernel';
+    import { computed, onMounted, ref, useSlots, watch } from 'vue';
+    import { fetchKeys } from '../functions/helpers';
+    import { useRouter } from 'vue-router';
+    import { Settings } from '../settings/Settings';
 
-  const emit = defineEmits([
+    const emit = defineEmits([
     'update:modelValue'
   ]);
 
 const props = withDefaults(defineProps<{
-    modelValue?: MenuEntry
+    modelValue?: MenuEntryConfig
 }>(), {
-    modelValue: () => (new MenuEntry())
+    modelValue: () => ({})
 });
 
-const entry = ref(props.modelValue),
+const entry = ref(<MenuEntryConfig>props.modelValue),
     slots = useSlots(),
     router = useRouter(),
     isActive = ref(false);
@@ -24,7 +24,7 @@ const onClickToggle = () => {
         entry.value.isOpened = !entry.value.isOpened;
     },
     onClick = () => {
-        if (entry.value.children?.length > 0) onClickToggle();
+        if (typeof entry.value.children !== 'undefined' && entry.value.children?.length > 0) onClickToggle();
 
         if (typeof entry.value.events?.click === 'function') {
           entry.value.events.click({
@@ -49,14 +49,15 @@ const canRenderIcon = computed(() => {
         let r = [];
         if (canRenderIcon.value) r.push('has-icon');
         if (isActive.value) r.push('is-active');
+        if (entry.value.type) r.push(`is-${entry.value.type}`);
         return r.join(' ');
     });
 
 const availableKeys = computed(() => {
         let r: string[] = [];
-        return fetchKeys(r, entry.value.children);
+        return fetchKeys(r, entry.value?.children ?? []);
     }),
-    entryIconSlots = computed((): LktObject => {
+    entryIconSlots = computed((): Array<string> => {
         let r = [];
         for (let k in slots) {
             if (k.startsWith('icon-')) {
@@ -66,9 +67,6 @@ const availableKeys = computed(() => {
             }
         }
         return r;
-    }),
-    computedLabel = computed(() => {
-        return extractI18nValue(entry.value.label);
     }),
     computedIsActive = computed(() => {
         if (entry.value.isActive) return true;
@@ -100,13 +98,13 @@ watch(entry, (v) => {
 onMounted(() => {
     let currentRoute = router?.currentRoute;
     if (currentRoute) {
-      if (currentRoute.value.path === entry.value.href) {
+      if (currentRoute.value.path === entry.value.anchor?.to) {
           entry.value.isOpened = true;
 
-      } else if (entry.value.children?.length > 0) {
+      } else if (typeof entry.value.children !== 'undefined' && entry.value.children?.length > 0) {
           let opened = false;
           entry.value.children?.forEach((child) => {
-              if (currentRoute.value.path === child.href) opened = true;
+              if (currentRoute.value.path === child.anchor?.to) opened = true;
           });
 
           if (opened) entry.value.isOpened = true;
@@ -118,34 +116,55 @@ onMounted(() => {
 <template>
     <div class="lkt-menu-entry" :class="classes">
         <div class="lkt-menu-entry-main">
+            <lkt-button
+                v-if="entry.type === MenuEntryType.Button"
+                v-bind="entry.button"
+            >
+                <template v-if="slots.tooltip" #tooltip>
+                    <slot name="tooltip"/>
+                </template>
+                <template v-if="slots.split" #split>
+                    <slot name="split"/>
+                </template>
+            </lkt-button>
+
             <lkt-anchor
-                :to="entry.href"
+                v-else-if="entry.type === MenuEntryType.Anchor"
+                v-bind="entry.anchor"
+            />
+            <lkt-anchor
+                v-else
+                v-bind="entry.anchor"
                 :on-click="onClick"
                 :is-active="computedIsActive"
                 @active="($e: any) => isActive = $e"
             >
-                <div class="lkt-entry-content">
-                    <div class="lkt-menu-entry-icon" v-if="canRenderIcon">
-                        <template v-if="slots['icon-'+entry.key]">
-                            <slot :name="'icon-'+entry.key"
-                                  :key="entry.key"
-                                  :entry="entry"/>
-                        </template>
-                        <template v-else-if="entry.icon !== ''">
-                            <i :class="entry.icon"/>
-                        </template>
+                <template #text="{text}">
+                    <div class="lkt-entry-content">
+                        <div class="lkt-menu-entry-icon" v-if="canRenderIcon">
+                            <template v-if="slots['icon-'+entry.key]">
+                                <slot :name="'icon-'+entry.key"
+                                      :key="entry.key"
+                                      :entry="entry"/>
+                            </template>
+                            <template v-else-if="entry.icon !== ''">
+                                <i :class="entry.icon"/>
+                            </template>
+                        </div>
+                        <div class="lkt-menu-entry-text" v-if="text !== ''">
+                            {{ text }}
+                        </div>
                     </div>
-                    <div class="lkt-menu-entry-text" v-if="entry.label !== ''">
-                        {{ computedLabel }}
-                    </div>
-                </div>
+                </template>
             </lkt-anchor>
 
-            <div class="lkt-menu-entry-toggle" v-if="entry.children?.length > 0" @click="onClickToggle">
+            <div class="lkt-menu-entry-toggle" v-if="entry.type !== MenuEntryType.Button && entry.children && entry.children?.length > 0" @click="onClickToggle">
                 <template v-if="hasToggleSlot">
                     <component :is="toggleSlot" class="lkt-menu-entry-toggle-inner" :class="entry.isOpened ? 'is-opened' : '' "/>
                 </template>
-                <div v-else class="lkt-menu-entry-toggle-inner lkt-menu-entry-toggle-triangle" :class="entry.isOpened ? 'is-opened' : '' "/>
+                <div v-else class="lkt-menu-entry-toggle-inner" :class="entry.isOpened ? 'is-opened' : '' ">
+                    <i class="lkt-icn-angle-bottom"/>
+                </div>
             </div>
         </div>
         <div class="lkt-menu-entry-children" v-if="entry.isOpened">
