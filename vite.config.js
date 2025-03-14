@@ -35,6 +35,7 @@ export default {
                 'lkt-i18n',
                 'lkt-control-tools',
                 'lkt-string-tools',
+                'lkt-vue-kernel',
             ],
             output: {
                 globals: {

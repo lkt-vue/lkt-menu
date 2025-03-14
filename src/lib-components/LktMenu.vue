@@ -1,11 +1,10 @@
 <script setup lang="ts">
   import MenuItem from '../components/MenuItem.vue';
   import { computed, ref, useSlots, watch } from 'vue';
-  import { LktObject } from 'lkt-ts-interfaces';
+  import { getDefaultValues, LktObject, Menu, MenuConfig } from 'lkt-vue-kernel';
   import { fetchKeys } from '../functions/helpers';
   import { DataState } from 'lkt-data-state';
   import { httpCall, HTTPResponse } from 'lkt-http-client';
-  import { getDefaultValues, Menu, MenuConfig } from 'lkt-vue-kernel';
 
   const props = withDefaults(defineProps<MenuConfig>(), getDefaultValues(Menu));
 

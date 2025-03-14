@@ -1,6 +1,6 @@
 {
   "name": "lkt-menu",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "",
   "keywords": [
     "lkt",
@@ -54,7 +54,7 @@
     "lkt-data-state": "^1.0.11",
     "lkt-http-client": "^1.0.34",
     "lkt-i18n": "^1.0.6",
-    "lkt-vue-kernel": "^1.0.32",
+    "lkt-vue-kernel": "1.0.44",
     "vue": "^3.3.0",
     "vue-router": "^4.3.3"
   }

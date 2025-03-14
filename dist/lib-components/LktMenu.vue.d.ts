@@ -1,6 +1,5 @@
 import MenuItem from '../components/MenuItem.vue';
-import { LktObject } from 'lkt-ts-interfaces';
-import { MenuConfig } from 'lkt-vue-kernel';
+import { LktObject, MenuConfig } from 'lkt-vue-kernel';
 declare const entries: import("vue").Ref<{
     key?: string | undefined;
     href?: string | undefined;
@@ -58,7 +57,7 @@ declare const __VLS_self: import("vue").DefineComponent<MenuConfig, {
     onResponse?: ((...args: any[]) => any) | undefined;
 }>, {
     resource: string;
-    resourceData: import("lkt-vue-kernel").LktObject;
+    resourceData: LktObject;
     modelValue: import("lkt-vue-kernel").MenuEntryConfig[];
 }, {}, {}, {}, string, import("vue").ComponentProvideOptions, false, {}, any>;
 declare const __VLS_component: import("vue").DefineComponent<MenuConfig, {}, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
@@ -77,7 +76,7 @@ declare const __VLS_component: import("vue").DefineComponent<MenuConfig, {}, {},
     onResponse?: ((...args: any[]) => any) | undefined;
 }>, {
     resource: string;
-    resourceData: import("lkt-vue-kernel").LktObject;
+    resourceData: LktObject;
     modelValue: import("lkt-vue-kernel").MenuEntryConfig[];
 }, {}, {}, {}, string, import("vue").ComponentProvideOptions, false, {}, any>;
 declare const _default: __VLS_WithSlots<typeof __VLS_component, __VLS_Slots>;
