@@ -1,5 +1,5 @@
 .lkt-menu {
-    --lkt-menu--display: display;
+    --lkt-menu--display: flex;
     --lkt-menu--flex-direction: column;
     --lkt-menu--align-items: stretch;
 
