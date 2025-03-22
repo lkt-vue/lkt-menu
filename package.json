@@ -1,6 +1,6 @@
 {
   "name": "lkt-menu",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "",
   "keywords": [
     "lkt",
@@ -50,11 +50,11 @@
     "vue-tsc": "^2.2.0"
   },
   "peerDependencies": {
-    "lkt-anchor": "^1.2.4",
+    "lkt-anchor": "^2.0.1",
     "lkt-data-state": "^1.0.11",
     "lkt-http-client": "^1.0.34",
-    "lkt-i18n": "^1.0.6",
-    "lkt-vue-kernel": "^1.0.46",
+    "lkt-i18n": "^1.1.0",
+    "lkt-vue-kernel": "^1.0.51",
     "vue": "^3.3.0",
     "vue-router": "^4.3.3"
   }

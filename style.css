@@ -4,9 +4,9 @@
     max-width: var(--lkt-menu--max-width);
     width: var(--lkt-menu--width);
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    display: var(--lkt-menu--display);
+    flex-direction: var(--lkt-menu--flex-direction);
+    align-items: var(--lkt-menu--align-items);
     gap: var(--lkt-menu--entry--gap);
 }
 
@@ -16,16 +16,6 @@
 
 .lkt-menu-entry-toggle-inner.is-opened {
     transform: rotatez(180deg);
-}
-
-.lkt-menu-entry-toggle-triangle {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 10px 0 10px;
-    border-color: var(--lkt-menu--toggle--color) transparent transparent transparent;
-    transform: rotate(0deg);
-    transition: all linear 200ms;
 }
 
 .lkt-entry-content {

@@ -1,4 +1,8 @@
-:root {
+.lkt-menu {
+    --lkt-menu--display: display;
+    --lkt-menu--flex-direction: column;
+    --lkt-menu--align-items: stretch;
+
     /** Font */
     --lkt-menu--font-family: system-ui, Helvetica;
     --lkt-menu--font-size: 16px;
@@ -6,7 +10,6 @@
     --lkt-menu--line-height: 1;
     --lkt-menu--text-align: left;
     --lkt-menu--text-decoration: none;
-    --lkt-menu--text-decoration--hover: none;
 
     /** Sizing */
     --lkt-menu--width: 100%;
@@ -32,4 +35,7 @@
 
     /** Colors: Outside */
     --lkt-menu--outside--bg: rgba(255, 255, 255, 0.75);
+
+    /** Event: Hover */
+    --lkt-menu--hover--text-decoration: none;
 }
