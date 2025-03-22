@@ -21,7 +21,7 @@
     --lkt-menu--entry--gap: 0;
 
     /** Colors */
-    --lkt-menu--bg: #ffffff;
+    --lkt-menu--background: #ffffff;
     --lkt-menu--toggle--color: #444444;
 
     /** Sizing: Entries */
@@ -34,7 +34,7 @@
     --lkt-menu--children--padding: 0 0 0 10px;
 
     /** Colors: Outside */
-    --lkt-menu--outside--bg: rgba(255, 255, 255, 0.75);
+    --lkt-menu--outside--background: rgba(255, 255, 255, 0.75);
 
     /** Event: Hover */
     --lkt-menu--hover--text-decoration: none;

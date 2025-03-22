@@ -1,5 +1,5 @@
 .lkt-menu {
-    background: var(--lkt-menu--bg);
+    background: var(--lkt-menu--background);
     padding: var(--lkt-menu--padding);
     max-width: var(--lkt-menu--max-width);
     width: var(--lkt-menu--width);
@@ -56,7 +56,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background: var(--lkt-menu--outside--bg);
+    background: var(--lkt-menu--outside--background);
     z-index: -1;
 }
 
