@@ -6,6 +6,7 @@ declare const slots: Readonly<{
 declare const entries: import("vue").Ref<{
     key?: string | undefined;
     type?: import("lkt-vue-kernel").MenuEntryType | undefined;
+    class?: string | undefined;
     icon?: string | undefined;
     anchor?: {
         type?: import("lkt-vue-kernel").AnchorType | undefined;
@@ -1507,6 +1508,7 @@ declare const entries: import("vue").Ref<{
 }[], import("lkt-vue-kernel").MenuEntryConfig[] | {
     key?: string | undefined;
     type?: import("lkt-vue-kernel").MenuEntryType | undefined;
+    class?: string | undefined;
     icon?: string | undefined;
     anchor?: {
         type?: import("lkt-vue-kernel").AnchorType | undefined;

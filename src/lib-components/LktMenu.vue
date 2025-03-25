@@ -87,7 +87,7 @@
 <template>
     <div class="lkt-menu-container">
         <div class="lkt-menu">
-            <menu-item v-for="(entry, i) in entries" v-model="entries[i]" :key="entry.key">
+            <menu-item v-for="(entry, i) in entries" v-model="entries[i]" :key="entry.key" :class="entry.class">
                 <template v-for="slot in entryIconSlots" v-slot:[slot]>
                     <slot :name="slot" />
                 </template>

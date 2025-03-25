@@ -2,16 +2,12 @@
     --lkt-menu--display: flex;
     --lkt-menu--flex-direction: column;
     --lkt-menu--align-items: stretch;
-
-    /** Font */
     --lkt-menu--font-family: system-ui, Helvetica;
     --lkt-menu--font-size: 16px;
     --lkt-menu--font-weight: 400;
     --lkt-menu--line-height: 1;
     --lkt-menu--text-align: left;
     --lkt-menu--text-decoration: none;
-
-    /** Sizing */
     --lkt-menu--width: 100%;
     --lkt-menu--min-width: 0;
     --lkt-menu--max-width: initial;
@@ -19,8 +15,6 @@
     --lkt-menu--padding: 15px;
     --lkt-menu--gap: 15px;
     --lkt-menu--entry--gap: 0;
-
-    /** Colors */
     --lkt-menu--background: #ffffff;
     --lkt-menu--toggle--color: #444444;
 

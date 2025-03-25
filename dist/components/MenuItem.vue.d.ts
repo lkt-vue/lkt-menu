@@ -5,6 +5,7 @@ type __VLS_Props = {
 declare const entry: import("vue").Ref<{
     key?: string | undefined;
     type?: MenuEntryType | undefined;
+    class?: string | undefined;
     icon?: string | undefined;
     anchor?: {
         type?: import("lkt-vue-kernel").AnchorType | undefined;
@@ -1506,6 +1507,7 @@ declare const entry: import("vue").Ref<{
 }, MenuEntryConfig | {
     key?: string | undefined;
     type?: MenuEntryType | undefined;
+    class?: string | undefined;
     icon?: string | undefined;
     anchor?: {
         type?: import("lkt-vue-kernel").AnchorType | undefined;
@@ -3016,6 +3018,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_22: string, __VLS_23: {
     entry: {
         key?: string | undefined;
         type?: MenuEntryType | undefined;
+        class?: string | undefined;
         icon?: string | undefined;
         anchor?: {
             type?: import("lkt-vue-kernel").AnchorType | undefined;
