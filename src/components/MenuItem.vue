@@ -6,111 +6,105 @@
     import { Settings } from '../settings/Settings';
 
     const emit = defineEmits([
-    'update:modelValue'
-  ]);
+        'update:modelValue',
+    ]);
 
-const props = withDefaults(defineProps<{
-    modelValue?: MenuEntryConfig
-}>(), {
-    modelValue: () => ({})
-});
-
-const entry = ref(<MenuEntryConfig>props.modelValue),
-    slots = useSlots(),
-    router = useRouter(),
-    isActive = ref(false);
-
-const onClickToggle = () => {
-        entry.value.isOpened = !entry.value.isOpened;
-    },
-    onClick = () => {
-        if (typeof entry.value.children !== 'undefined' && entry.value.children?.length > 0) onClickToggle();
-
-        if (typeof entry.value.events?.click === 'function') {
-          entry.value.events.click({
-            entry: entry.value
-          });
-          return 1;
-        }
-
-        if (typeof entry.value.onClick === 'function') {
-            entry.value.onClick({
-                entry: entry.value
-            });
-        }
-        return 1;
-    };
-
-const canRenderIcon = computed(() => {
-        return slots['icon-' + entry.value.key]
-            || entry.value.icon !== '';
-    }),
-    classes = computed(() => {
-        let r = [];
-        if (canRenderIcon.value) r.push('has-icon');
-        if (isActive.value) r.push('is-active');
-        if (entry.value.type) r.push(`is-${entry.value.type}`);
-        return r.join(' ');
+    const props = withDefaults(defineProps<{
+        modelValue?: MenuEntryConfig
+    }>(), {
+        modelValue: () => ({}),
     });
 
-const availableKeys = computed(() => {
-        let r: string[] = [];
-        return fetchKeys(r, entry.value?.children ?? []);
-    }),
-    entryIconSlots = computed((): Array<string> => {
-        let r = [];
-        for (let k in slots) {
-            if (k.startsWith('icon-')) {
-                if (availableKeys.value.includes(k.substring(5))) {
-                    r.push(k);
+    const entry = ref(<MenuEntryConfig>props.modelValue),
+        slots = useSlots(),
+        router = useRouter(),
+        isActive = ref(false);
+
+    const onClickToggle = () => {
+            entry.value.isOpened = !entry.value.isOpened;
+        },
+        onClick = () => {
+            if (typeof entry.value.children !== 'undefined' && entry.value.children?.length > 0 && !entry.value.keepOpenOnChildClick) onClickToggle();
+
+            if (typeof entry.value.events?.click === 'function') {
+                entry.value.events.click({
+                    entry: entry.value,
+                });
+                return 1;
+            }
+            return 1;
+        };
+
+    const canRenderIcon = computed(() => {
+            return slots['icon-' + entry.value.key]
+                || entry.value.icon !== '';
+        }),
+        classes = computed(() => {
+            let r = [];
+            if (canRenderIcon.value) r.push('has-icon');
+            if (isActive.value) r.push('is-active');
+            if (entry.value.type) r.push(`is-${entry.value.type}`);
+            return r.join(' ');
+        });
+
+    const availableKeys = computed(() => {
+            let r: string[] = [];
+            return fetchKeys(r, entry.value?.children ?? []);
+        }),
+        entryIconSlots = computed((): Array<string> => {
+            let r = [];
+            for (let k in slots) {
+                if (k.startsWith('icon-')) {
+                    if (availableKeys.value.includes(k.substring(5))) {
+                        r.push(k);
+                    }
                 }
             }
-        }
-        return r;
-    }),
-    computedIsActive = computed(() => {
-        if (entry.value.isActive) return true;
+            return r;
+        }),
+        computedIsActive = computed(() => {
+            if (entry.value.isActive) return true;
 
-        if (typeof entry.value.isActiveChecker === 'function') {
-            let r = entry.value.isActiveChecker({
-                entry: entry.value
-            });
-            return !!r;
-        }
+            if (typeof entry.value.isActiveChecker === 'function') {
+                let r = entry.value.isActiveChecker({
+                    entry: entry.value,
+                });
+                return !!r;
+            }
 
-        return false;
-    }),
-    hasToggleSlot = computed(() => {
-        return !!Settings.toggleSlot;
-    }),
-    toggleSlot = computed(() => {
-        return Settings.toggleSlot;
+            return false;
+        }),
+        hasToggleSlot = computed(() => {
+            return !!Settings.toggleSlot;
+        }),
+        toggleSlot = computed(() => {
+            return Settings.toggleSlot;
+        });
+
+    watch(() => props.modelValue, (v) => {
+        entry.value = v;
+    }, { deep: true });
+
+    watch(entry, (v) => {
+        emit('update:modelValue', v);
+    }, { deep: true });
+
+    onMounted(() => {
+        let currentRoute = router?.currentRoute;
+        if (currentRoute) {
+            if (currentRoute.value.path === entry.value.anchor?.to) {
+                entry.value.isOpened = true;
+
+            } else if (typeof entry.value.children !== 'undefined' && entry.value.children?.length > 0) {
+                let opened = false;
+                entry.value.children?.forEach((child) => {
+                    if (currentRoute.value.path === child.anchor?.to) opened = true;
+                });
+
+                if (opened) entry.value.isOpened = true;
+            }
+        }
     });
-
-watch(() => props.modelValue, (v) => {
-    entry.value = v
-}, {deep: true});
-
-watch(entry, (v) => {
-    emit('update:modelValue', v)
-}, {deep: true});
-
-onMounted(() => {
-    let currentRoute = router?.currentRoute;
-    if (currentRoute) {
-      if (currentRoute.value.path === entry.value.anchor?.to) {
-          entry.value.isOpened = true;
-
-      } else if (typeof entry.value.children !== 'undefined' && entry.value.children?.length > 0) {
-          let opened = false;
-          entry.value.children?.forEach((child) => {
-              if (currentRoute.value.path === child.anchor?.to) opened = true;
-          });
-
-          if (opened) entry.value.isOpened = true;
-      }
-    }
-});
 </script>
 
 <template>
@@ -121,10 +115,10 @@ onMounted(() => {
                 v-bind="entry.button"
             >
                 <template v-if="slots.tooltip" #tooltip>
-                    <slot name="tooltip"/>
+                    <slot name="tooltip" />
                 </template>
                 <template v-if="slots.split" #split>
-                    <slot name="split"/>
+                    <slot name="split" />
                 </template>
             </lkt-button>
 
@@ -145,10 +139,10 @@ onMounted(() => {
                             <template v-if="slots['icon-'+entry.key]">
                                 <slot :name="'icon-'+entry.key"
                                       :key="entry.key"
-                                      :entry="entry"/>
+                                      :entry="entry" />
                             </template>
                             <template v-else-if="entry.icon !== ''">
-                                <i :class="entry.icon"/>
+                                <i :class="entry.icon" />
                             </template>
                         </div>
                         <div class="lkt-menu-entry-text" v-if="text !== ''">
@@ -158,19 +152,24 @@ onMounted(() => {
                 </template>
             </lkt-anchor>
 
-            <div class="lkt-menu-entry-toggle" v-if="entry.type !== MenuEntryType.Button && entry.children && entry.children?.length > 0" @click="onClickToggle">
+            <div class="lkt-menu-entry-toggle"
+                 v-if="entry.type !== MenuEntryType.Button && entry.children && entry.children?.length > 0"
+                 @click="onClickToggle">
                 <template v-if="hasToggleSlot">
-                    <component :is="toggleSlot" class="lkt-menu-entry-toggle-inner" :class="entry.isOpened ? 'is-opened' : '' "/>
+                    <component :is="toggleSlot" class="lkt-menu-entry-toggle-inner"
+                               :class="entry.isOpened ? 'is-opened' : '' " />
                 </template>
                 <div v-else class="lkt-menu-entry-toggle-inner" :class="entry.isOpened ? 'is-opened' : '' ">
-                    <i class="lkt-icn-angle-bottom"/>
+                    <i class="lkt-icn-angle-bottom" />
                 </div>
             </div>
         </div>
         <div class="lkt-menu-entry-children" v-if="entry.isOpened">
-            <menu-item v-for="(_, i) in entry.children" v-model="entry.children[i]" :key="entry.children[i].key">
+            <menu-item v-for="(_, i) in entry.children"
+                       v-model="entry.children[i]"
+                       :key="entry.children[i].key">
                 <template v-for="slot in entryIconSlots" v-slot:[slot]>
-                    <slot :name="slot"/>
+                    <slot :name="slot" />
                 </template>
             </menu-item>
         </div>

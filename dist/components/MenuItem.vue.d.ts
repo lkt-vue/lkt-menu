@@ -74,43 +74,7 @@ declare const entry: import("vue").Ref<{
                 iconEndOn?: import("lkt-vue-kernel").ValidTextValue;
                 iconEndOff?: import("lkt-vue-kernel").ValidTextValue;
                 dot?: import("lkt-vue-kernel").ValidButtonDot | undefined;
-                anchor?: /*elided*/ any | {
-                    type: import("lkt-vue-kernel").AnchorType;
-                    to?: string | {
-                        name?: import("vue-router").RouteRecordNameGeneric;
-                        params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                        path?: undefined | undefined;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | {
-                        path: string;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | undefined;
-                    class: string;
-                    isActive: boolean;
-                    downloadFileName: string;
-                    disabled: boolean;
-                    onClick: Function | undefined;
-                    confirmModal: import("lkt-vue-kernel").ValidModalName;
-                    confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                    confirmData: import("lkt-vue-kernel").LktObject;
-                    imposter: boolean;
-                    external: boolean;
-                    text?: import("lkt-vue-kernel").ValidTextValue;
-                    events?: {
-                        click?: Function | undefined;
-                    } | undefined;
-                    getHref: () => string;
-                    feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                    assignProp: (key: string, value: any) => void;
-                } | undefined;
+                anchor?: /*elided*/ any | undefined;
                 resource?: string | undefined;
                 resourceData?: import("lkt-vue-kernel").LktObject | undefined;
                 modal?: import("lkt-vue-kernel").ValidModalName;
@@ -223,43 +187,7 @@ declare const entry: import("vue").Ref<{
                 iconEndOn?: import("lkt-vue-kernel").ValidTextValue;
                 iconEndOff?: import("lkt-vue-kernel").ValidTextValue;
                 dot?: import("lkt-vue-kernel").ValidButtonDot | undefined;
-                anchor?: /*elided*/ any | {
-                    type: import("lkt-vue-kernel").AnchorType;
-                    to?: string | {
-                        name?: import("vue-router").RouteRecordNameGeneric;
-                        params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                        path?: undefined | undefined;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | {
-                        path: string;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | undefined;
-                    class: string;
-                    isActive: boolean;
-                    downloadFileName: string;
-                    disabled: boolean;
-                    onClick: Function | undefined;
-                    confirmModal: import("lkt-vue-kernel").ValidModalName;
-                    confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                    confirmData: import("lkt-vue-kernel").LktObject;
-                    imposter: boolean;
-                    external: boolean;
-                    text?: import("lkt-vue-kernel").ValidTextValue;
-                    events?: {
-                        click?: Function | undefined;
-                    } | undefined;
-                    getHref: () => string;
-                    feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                    assignProp: (key: string, value: any) => void;
-                } | undefined;
+                anchor?: /*elided*/ any | undefined;
                 resource?: string | undefined;
                 resourceData?: import("lkt-vue-kernel").LktObject | undefined;
                 modal?: import("lkt-vue-kernel").ValidModalName;
@@ -448,43 +376,7 @@ declare const entry: import("vue").Ref<{
                     iconEndOn?: import("lkt-vue-kernel").ValidTextValue;
                     iconEndOff?: import("lkt-vue-kernel").ValidTextValue;
                     dot?: import("lkt-vue-kernel").ValidButtonDot | undefined;
-                    anchor?: /*elided*/ any | {
-                        type: import("lkt-vue-kernel").AnchorType;
-                        to?: string | {
-                            name?: import("vue-router").RouteRecordNameGeneric;
-                            params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                            path?: undefined | undefined;
-                            query?: import("vue-router").LocationQueryRaw | undefined;
-                            hash?: string | undefined;
-                            replace?: boolean | undefined;
-                            force?: boolean | undefined;
-                            state?: import("vue-router").HistoryState | undefined;
-                        } | {
-                            path: string;
-                            query?: import("vue-router").LocationQueryRaw | undefined;
-                            hash?: string | undefined;
-                            replace?: boolean | undefined;
-                            force?: boolean | undefined;
-                            state?: import("vue-router").HistoryState | undefined;
-                        } | undefined;
-                        class: string;
-                        isActive: boolean;
-                        downloadFileName: string;
-                        disabled: boolean;
-                        onClick: Function | undefined;
-                        confirmModal: import("lkt-vue-kernel").ValidModalName;
-                        confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                        confirmData: import("lkt-vue-kernel").LktObject;
-                        imposter: boolean;
-                        external: boolean;
-                        text?: import("lkt-vue-kernel").ValidTextValue;
-                        events?: {
-                            click?: Function | undefined;
-                        } | undefined;
-                        getHref: () => string;
-                        feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                        assignProp: (key: string, value: any) => void;
-                    } | undefined;
+                    anchor?: /*elided*/ any | undefined;
                     resource?: string | undefined;
                     resourceData?: import("lkt-vue-kernel").LktObject | undefined;
                     modal?: import("lkt-vue-kernel").ValidModalName;
@@ -597,43 +489,7 @@ declare const entry: import("vue").Ref<{
                     iconEndOn?: import("lkt-vue-kernel").ValidTextValue;
                     iconEndOff?: import("lkt-vue-kernel").ValidTextValue;
                     dot?: import("lkt-vue-kernel").ValidButtonDot | undefined;
-                    anchor?: /*elided*/ any | {
-                        type: import("lkt-vue-kernel").AnchorType;
-                        to?: string | {
-                            name?: import("vue-router").RouteRecordNameGeneric;
-                            params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                            path?: undefined | undefined;
-                            query?: import("vue-router").LocationQueryRaw | undefined;
-                            hash?: string | undefined;
-                            replace?: boolean | undefined;
-                            force?: boolean | undefined;
-                            state?: import("vue-router").HistoryState | undefined;
-                        } | {
-                            path: string;
-                            query?: import("vue-router").LocationQueryRaw | undefined;
-                            hash?: string | undefined;
-                            replace?: boolean | undefined;
-                            force?: boolean | undefined;
-                            state?: import("vue-router").HistoryState | undefined;
-                        } | undefined;
-                        class: string;
-                        isActive: boolean;
-                        downloadFileName: string;
-                        disabled: boolean;
-                        onClick: Function | undefined;
-                        confirmModal: import("lkt-vue-kernel").ValidModalName;
-                        confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                        confirmData: import("lkt-vue-kernel").LktObject;
-                        imposter: boolean;
-                        external: boolean;
-                        text?: import("lkt-vue-kernel").ValidTextValue;
-                        events?: {
-                            click?: Function | undefined;
-                        } | undefined;
-                        getHref: () => string;
-                        feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                        assignProp: (key: string, value: any) => void;
-                    } | undefined;
+                    anchor?: /*elided*/ any | undefined;
                     resource?: string | undefined;
                     resourceData?: import("lkt-vue-kernel").LktObject | undefined;
                     modal?: import("lkt-vue-kernel").ValidModalName;
@@ -732,42 +588,6 @@ declare const entry: import("vue").Ref<{
                 click?: Function | undefined;
             } | undefined;
             onClick?: Function | undefined;
-        } | {
-            type: import("lkt-vue-kernel").AnchorType;
-            to?: string | {
-                name?: import("vue-router").RouteRecordNameGeneric;
-                params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                path?: undefined | undefined;
-                query?: import("vue-router").LocationQueryRaw | undefined;
-                hash?: string | undefined;
-                replace?: boolean | undefined;
-                force?: boolean | undefined;
-                state?: import("vue-router").HistoryState | undefined;
-            } | {
-                path: string;
-                query?: import("vue-router").LocationQueryRaw | undefined;
-                hash?: string | undefined;
-                replace?: boolean | undefined;
-                force?: boolean | undefined;
-                state?: import("vue-router").HistoryState | undefined;
-            } | undefined;
-            class: string;
-            isActive: boolean;
-            downloadFileName: string;
-            disabled: boolean;
-            onClick: Function | undefined;
-            confirmModal: import("lkt-vue-kernel").ValidModalName;
-            confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-            confirmData: import("lkt-vue-kernel").LktObject;
-            imposter: boolean;
-            external: boolean;
-            text?: import("lkt-vue-kernel").ValidTextValue;
-            events?: {
-                click?: Function | undefined;
-            } | undefined;
-            getHref: () => string;
-            feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-            assignProp: (key: string, value: any) => void;
         } | undefined;
         resource?: string | undefined;
         resourceData?: import("lkt-vue-kernel").LktObject | undefined;
@@ -870,42 +690,6 @@ declare const entry: import("vue").Ref<{
                         click?: Function | undefined;
                     } | undefined;
                     onClick?: Function | undefined;
-                } | {
-                    type: import("lkt-vue-kernel").AnchorType;
-                    to?: string | {
-                        name?: import("vue-router").RouteRecordNameGeneric;
-                        params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                        path?: undefined | undefined;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | {
-                        path: string;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | undefined;
-                    class: string;
-                    isActive: boolean;
-                    downloadFileName: string;
-                    disabled: boolean;
-                    onClick: Function | undefined;
-                    confirmModal: import("lkt-vue-kernel").ValidModalName;
-                    confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                    confirmData: import("lkt-vue-kernel").LktObject;
-                    imposter: boolean;
-                    external: boolean;
-                    text?: import("lkt-vue-kernel").ValidTextValue;
-                    events?: {
-                        click?: Function | undefined;
-                    } | undefined;
-                    getHref: () => string;
-                    feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                    assignProp: (key: string, value: any) => void;
                 } | undefined;
                 resource?: string | undefined;
                 resourceData?: import("lkt-vue-kernel").LktObject | undefined;
@@ -1030,42 +814,6 @@ declare const entry: import("vue").Ref<{
                         click?: Function | undefined;
                     } | undefined;
                     onClick?: Function | undefined;
-                } | {
-                    type: import("lkt-vue-kernel").AnchorType;
-                    to?: string | {
-                        name?: import("vue-router").RouteRecordNameGeneric;
-                        params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                        path?: undefined | undefined;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | {
-                        path: string;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | undefined;
-                    class: string;
-                    isActive: boolean;
-                    downloadFileName: string;
-                    disabled: boolean;
-                    onClick: Function | undefined;
-                    confirmModal: import("lkt-vue-kernel").ValidModalName;
-                    confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                    confirmData: import("lkt-vue-kernel").LktObject;
-                    imposter: boolean;
-                    external: boolean;
-                    text?: import("lkt-vue-kernel").ValidTextValue;
-                    events?: {
-                        click?: Function | undefined;
-                    } | undefined;
-                    getHref: () => string;
-                    feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                    assignProp: (key: string, value: any) => void;
                 } | undefined;
                 resource?: string | undefined;
                 resourceData?: import("lkt-vue-kernel").LktObject | undefined;
@@ -1213,42 +961,6 @@ declare const entry: import("vue").Ref<{
                         click?: Function | undefined;
                     } | undefined;
                     onClick?: Function | undefined;
-                } | {
-                    type: import("lkt-vue-kernel").AnchorType;
-                    to?: string | {
-                        name?: import("vue-router").RouteRecordNameGeneric;
-                        params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                        path?: undefined | undefined;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | {
-                        path: string;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | undefined;
-                    class: string;
-                    isActive: boolean;
-                    downloadFileName: string;
-                    disabled: boolean;
-                    onClick: Function | undefined;
-                    confirmModal: import("lkt-vue-kernel").ValidModalName;
-                    confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                    confirmData: import("lkt-vue-kernel").LktObject;
-                    imposter: boolean;
-                    external: boolean;
-                    text?: import("lkt-vue-kernel").ValidTextValue;
-                    events?: {
-                        click?: Function | undefined;
-                    } | undefined;
-                    getHref: () => string;
-                    feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                    assignProp: (key: string, value: any) => void;
                 } | undefined;
                 resource?: string | undefined;
                 resourceData?: import("lkt-vue-kernel").LktObject | undefined;
@@ -1373,42 +1085,6 @@ declare const entry: import("vue").Ref<{
                         click?: Function | undefined;
                     } | undefined;
                     onClick?: Function | undefined;
-                } | {
-                    type: import("lkt-vue-kernel").AnchorType;
-                    to?: string | {
-                        name?: import("vue-router").RouteRecordNameGeneric;
-                        params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                        path?: undefined | undefined;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | {
-                        path: string;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | undefined;
-                    class: string;
-                    isActive: boolean;
-                    downloadFileName: string;
-                    disabled: boolean;
-                    onClick: Function | undefined;
-                    confirmModal: import("lkt-vue-kernel").ValidModalName;
-                    confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                    confirmData: import("lkt-vue-kernel").LktObject;
-                    imposter: boolean;
-                    external: boolean;
-                    text?: import("lkt-vue-kernel").ValidTextValue;
-                    events?: {
-                        click?: Function | undefined;
-                    } | undefined;
-                    getHref: () => string;
-                    feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                    assignProp: (key: string, value: any) => void;
                 } | undefined;
                 resource?: string | undefined;
                 resourceData?: import("lkt-vue-kernel").LktObject | undefined;
@@ -1498,12 +1174,12 @@ declare const entry: import("vue").Ref<{
     isActiveChecker?: Function | undefined;
     isOpened?: boolean | undefined;
     isActive?: boolean | undefined;
+    keepOpenOnChildClick?: boolean | undefined;
     parent?: /*elided*/ any | undefined;
     children?: /*elided*/ any[] | undefined;
     events?: {
         click?: Function | undefined;
     } | undefined;
-    onClick?: Function | undefined;
 }, MenuEntryConfig | {
     key?: string | undefined;
     type?: MenuEntryType | undefined;
@@ -1576,43 +1252,7 @@ declare const entry: import("vue").Ref<{
                 iconEndOn?: import("lkt-vue-kernel").ValidTextValue;
                 iconEndOff?: import("lkt-vue-kernel").ValidTextValue;
                 dot?: import("lkt-vue-kernel").ValidButtonDot | undefined;
-                anchor?: /*elided*/ any | {
-                    type: import("lkt-vue-kernel").AnchorType;
-                    to?: string | {
-                        name?: import("vue-router").RouteRecordNameGeneric;
-                        params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                        path?: undefined | undefined;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | {
-                        path: string;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | undefined;
-                    class: string;
-                    isActive: boolean;
-                    downloadFileName: string;
-                    disabled: boolean;
-                    onClick: Function | undefined;
-                    confirmModal: import("lkt-vue-kernel").ValidModalName;
-                    confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                    confirmData: import("lkt-vue-kernel").LktObject;
-                    imposter: boolean;
-                    external: boolean;
-                    text?: import("lkt-vue-kernel").ValidTextValue;
-                    events?: {
-                        click?: Function | undefined;
-                    } | undefined;
-                    getHref: () => string;
-                    feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                    assignProp: (key: string, value: any) => void;
-                } | undefined;
+                anchor?: /*elided*/ any | undefined;
                 resource?: string | undefined;
                 resourceData?: import("lkt-vue-kernel").LktObject | undefined;
                 modal?: import("lkt-vue-kernel").ValidModalName;
@@ -1725,43 +1365,7 @@ declare const entry: import("vue").Ref<{
                 iconEndOn?: import("lkt-vue-kernel").ValidTextValue;
                 iconEndOff?: import("lkt-vue-kernel").ValidTextValue;
                 dot?: import("lkt-vue-kernel").ValidButtonDot | undefined;
-                anchor?: /*elided*/ any | {
-                    type: import("lkt-vue-kernel").AnchorType;
-                    to?: string | {
-                        name?: import("vue-router").RouteRecordNameGeneric;
-                        params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                        path?: undefined | undefined;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | {
-                        path: string;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | undefined;
-                    class: string;
-                    isActive: boolean;
-                    downloadFileName: string;
-                    disabled: boolean;
-                    onClick: Function | undefined;
-                    confirmModal: import("lkt-vue-kernel").ValidModalName;
-                    confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                    confirmData: import("lkt-vue-kernel").LktObject;
-                    imposter: boolean;
-                    external: boolean;
-                    text?: import("lkt-vue-kernel").ValidTextValue;
-                    events?: {
-                        click?: Function | undefined;
-                    } | undefined;
-                    getHref: () => string;
-                    feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                    assignProp: (key: string, value: any) => void;
-                } | undefined;
+                anchor?: /*elided*/ any | undefined;
                 resource?: string | undefined;
                 resourceData?: import("lkt-vue-kernel").LktObject | undefined;
                 modal?: import("lkt-vue-kernel").ValidModalName;
@@ -1950,43 +1554,7 @@ declare const entry: import("vue").Ref<{
                     iconEndOn?: import("lkt-vue-kernel").ValidTextValue;
                     iconEndOff?: import("lkt-vue-kernel").ValidTextValue;
                     dot?: import("lkt-vue-kernel").ValidButtonDot | undefined;
-                    anchor?: /*elided*/ any | {
-                        type: import("lkt-vue-kernel").AnchorType;
-                        to?: string | {
-                            name?: import("vue-router").RouteRecordNameGeneric;
-                            params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                            path?: undefined | undefined;
-                            query?: import("vue-router").LocationQueryRaw | undefined;
-                            hash?: string | undefined;
-                            replace?: boolean | undefined;
-                            force?: boolean | undefined;
-                            state?: import("vue-router").HistoryState | undefined;
-                        } | {
-                            path: string;
-                            query?: import("vue-router").LocationQueryRaw | undefined;
-                            hash?: string | undefined;
-                            replace?: boolean | undefined;
-                            force?: boolean | undefined;
-                            state?: import("vue-router").HistoryState | undefined;
-                        } | undefined;
-                        class: string;
-                        isActive: boolean;
-                        downloadFileName: string;
-                        disabled: boolean;
-                        onClick: Function | undefined;
-                        confirmModal: import("lkt-vue-kernel").ValidModalName;
-                        confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                        confirmData: import("lkt-vue-kernel").LktObject;
-                        imposter: boolean;
-                        external: boolean;
-                        text?: import("lkt-vue-kernel").ValidTextValue;
-                        events?: {
-                            click?: Function | undefined;
-                        } | undefined;
-                        getHref: () => string;
-                        feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                        assignProp: (key: string, value: any) => void;
-                    } | undefined;
+                    anchor?: /*elided*/ any | undefined;
                     resource?: string | undefined;
                     resourceData?: import("lkt-vue-kernel").LktObject | undefined;
                     modal?: import("lkt-vue-kernel").ValidModalName;
@@ -2099,43 +1667,7 @@ declare const entry: import("vue").Ref<{
                     iconEndOn?: import("lkt-vue-kernel").ValidTextValue;
                     iconEndOff?: import("lkt-vue-kernel").ValidTextValue;
                     dot?: import("lkt-vue-kernel").ValidButtonDot | undefined;
-                    anchor?: /*elided*/ any | {
-                        type: import("lkt-vue-kernel").AnchorType;
-                        to?: string | {
-                            name?: import("vue-router").RouteRecordNameGeneric;
-                            params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                            path?: undefined | undefined;
-                            query?: import("vue-router").LocationQueryRaw | undefined;
-                            hash?: string | undefined;
-                            replace?: boolean | undefined;
-                            force?: boolean | undefined;
-                            state?: import("vue-router").HistoryState | undefined;
-                        } | {
-                            path: string;
-                            query?: import("vue-router").LocationQueryRaw | undefined;
-                            hash?: string | undefined;
-                            replace?: boolean | undefined;
-                            force?: boolean | undefined;
-                            state?: import("vue-router").HistoryState | undefined;
-                        } | undefined;
-                        class: string;
-                        isActive: boolean;
-                        downloadFileName: string;
-                        disabled: boolean;
-                        onClick: Function | undefined;
-                        confirmModal: import("lkt-vue-kernel").ValidModalName;
-                        confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                        confirmData: import("lkt-vue-kernel").LktObject;
-                        imposter: boolean;
-                        external: boolean;
-                        text?: import("lkt-vue-kernel").ValidTextValue;
-                        events?: {
-                            click?: Function | undefined;
-                        } | undefined;
-                        getHref: () => string;
-                        feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                        assignProp: (key: string, value: any) => void;
-                    } | undefined;
+                    anchor?: /*elided*/ any | undefined;
                     resource?: string | undefined;
                     resourceData?: import("lkt-vue-kernel").LktObject | undefined;
                     modal?: import("lkt-vue-kernel").ValidModalName;
@@ -2234,42 +1766,6 @@ declare const entry: import("vue").Ref<{
                 click?: Function | undefined;
             } | undefined;
             onClick?: Function | undefined;
-        } | {
-            type: import("lkt-vue-kernel").AnchorType;
-            to?: string | {
-                name?: import("vue-router").RouteRecordNameGeneric;
-                params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                path?: undefined | undefined;
-                query?: import("vue-router").LocationQueryRaw | undefined;
-                hash?: string | undefined;
-                replace?: boolean | undefined;
-                force?: boolean | undefined;
-                state?: import("vue-router").HistoryState | undefined;
-            } | {
-                path: string;
-                query?: import("vue-router").LocationQueryRaw | undefined;
-                hash?: string | undefined;
-                replace?: boolean | undefined;
-                force?: boolean | undefined;
-                state?: import("vue-router").HistoryState | undefined;
-            } | undefined;
-            class: string;
-            isActive: boolean;
-            downloadFileName: string;
-            disabled: boolean;
-            onClick: Function | undefined;
-            confirmModal: import("lkt-vue-kernel").ValidModalName;
-            confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-            confirmData: import("lkt-vue-kernel").LktObject;
-            imposter: boolean;
-            external: boolean;
-            text?: import("lkt-vue-kernel").ValidTextValue;
-            events?: {
-                click?: Function | undefined;
-            } | undefined;
-            getHref: () => string;
-            feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-            assignProp: (key: string, value: any) => void;
         } | undefined;
         resource?: string | undefined;
         resourceData?: import("lkt-vue-kernel").LktObject | undefined;
@@ -2372,42 +1868,6 @@ declare const entry: import("vue").Ref<{
                         click?: Function | undefined;
                     } | undefined;
                     onClick?: Function | undefined;
-                } | {
-                    type: import("lkt-vue-kernel").AnchorType;
-                    to?: string | {
-                        name?: import("vue-router").RouteRecordNameGeneric;
-                        params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                        path?: undefined | undefined;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | {
-                        path: string;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | undefined;
-                    class: string;
-                    isActive: boolean;
-                    downloadFileName: string;
-                    disabled: boolean;
-                    onClick: Function | undefined;
-                    confirmModal: import("lkt-vue-kernel").ValidModalName;
-                    confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                    confirmData: import("lkt-vue-kernel").LktObject;
-                    imposter: boolean;
-                    external: boolean;
-                    text?: import("lkt-vue-kernel").ValidTextValue;
-                    events?: {
-                        click?: Function | undefined;
-                    } | undefined;
-                    getHref: () => string;
-                    feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                    assignProp: (key: string, value: any) => void;
                 } | undefined;
                 resource?: string | undefined;
                 resourceData?: import("lkt-vue-kernel").LktObject | undefined;
@@ -2532,42 +1992,6 @@ declare const entry: import("vue").Ref<{
                         click?: Function | undefined;
                     } | undefined;
                     onClick?: Function | undefined;
-                } | {
-                    type: import("lkt-vue-kernel").AnchorType;
-                    to?: string | {
-                        name?: import("vue-router").RouteRecordNameGeneric;
-                        params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                        path?: undefined | undefined;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | {
-                        path: string;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | undefined;
-                    class: string;
-                    isActive: boolean;
-                    downloadFileName: string;
-                    disabled: boolean;
-                    onClick: Function | undefined;
-                    confirmModal: import("lkt-vue-kernel").ValidModalName;
-                    confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                    confirmData: import("lkt-vue-kernel").LktObject;
-                    imposter: boolean;
-                    external: boolean;
-                    text?: import("lkt-vue-kernel").ValidTextValue;
-                    events?: {
-                        click?: Function | undefined;
-                    } | undefined;
-                    getHref: () => string;
-                    feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                    assignProp: (key: string, value: any) => void;
                 } | undefined;
                 resource?: string | undefined;
                 resourceData?: import("lkt-vue-kernel").LktObject | undefined;
@@ -2715,42 +2139,6 @@ declare const entry: import("vue").Ref<{
                         click?: Function | undefined;
                     } | undefined;
                     onClick?: Function | undefined;
-                } | {
-                    type: import("lkt-vue-kernel").AnchorType;
-                    to?: string | {
-                        name?: import("vue-router").RouteRecordNameGeneric;
-                        params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                        path?: undefined | undefined;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | {
-                        path: string;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | undefined;
-                    class: string;
-                    isActive: boolean;
-                    downloadFileName: string;
-                    disabled: boolean;
-                    onClick: Function | undefined;
-                    confirmModal: import("lkt-vue-kernel").ValidModalName;
-                    confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                    confirmData: import("lkt-vue-kernel").LktObject;
-                    imposter: boolean;
-                    external: boolean;
-                    text?: import("lkt-vue-kernel").ValidTextValue;
-                    events?: {
-                        click?: Function | undefined;
-                    } | undefined;
-                    getHref: () => string;
-                    feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                    assignProp: (key: string, value: any) => void;
                 } | undefined;
                 resource?: string | undefined;
                 resourceData?: import("lkt-vue-kernel").LktObject | undefined;
@@ -2875,42 +2263,6 @@ declare const entry: import("vue").Ref<{
                         click?: Function | undefined;
                     } | undefined;
                     onClick?: Function | undefined;
-                } | {
-                    type: import("lkt-vue-kernel").AnchorType;
-                    to?: string | {
-                        name?: import("vue-router").RouteRecordNameGeneric;
-                        params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                        path?: undefined | undefined;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | {
-                        path: string;
-                        query?: import("vue-router").LocationQueryRaw | undefined;
-                        hash?: string | undefined;
-                        replace?: boolean | undefined;
-                        force?: boolean | undefined;
-                        state?: import("vue-router").HistoryState | undefined;
-                    } | undefined;
-                    class: string;
-                    isActive: boolean;
-                    downloadFileName: string;
-                    disabled: boolean;
-                    onClick: Function | undefined;
-                    confirmModal: import("lkt-vue-kernel").ValidModalName;
-                    confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                    confirmData: import("lkt-vue-kernel").LktObject;
-                    imposter: boolean;
-                    external: boolean;
-                    text?: import("lkt-vue-kernel").ValidTextValue;
-                    events?: {
-                        click?: Function | undefined;
-                    } | undefined;
-                    getHref: () => string;
-                    feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                    assignProp: (key: string, value: any) => void;
                 } | undefined;
                 resource?: string | undefined;
                 resourceData?: import("lkt-vue-kernel").LktObject | undefined;
@@ -3000,12 +2352,12 @@ declare const entry: import("vue").Ref<{
     isActiveChecker?: Function | undefined;
     isOpened?: boolean | undefined;
     isActive?: boolean | undefined;
+    keepOpenOnChildClick?: boolean | undefined;
     parent?: /*elided*/ any | undefined;
     children?: /*elided*/ any[] | undefined;
     events?: {
         click?: Function | undefined;
     } | undefined;
-    onClick?: Function | undefined;
 }>, slots: Readonly<{
     [name: string]: import("vue").Slot<any> | undefined;
 }>, isActive: import("vue").Ref<boolean, boolean>;
@@ -3087,43 +2439,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_22: string, __VLS_23: {
                     iconEndOn?: import("lkt-vue-kernel").ValidTextValue;
                     iconEndOff?: import("lkt-vue-kernel").ValidTextValue;
                     dot?: import("lkt-vue-kernel").ValidButtonDot | undefined;
-                    anchor?: /*elided*/ any | {
-                        type: import("lkt-vue-kernel").AnchorType;
-                        to?: string | {
-                            name?: import("vue-router").RouteRecordNameGeneric;
-                            params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                            path?: undefined | undefined;
-                            query?: import("vue-router").LocationQueryRaw | undefined;
-                            hash?: string | undefined;
-                            replace?: boolean | undefined;
-                            force?: boolean | undefined;
-                            state?: import("vue-router").HistoryState | undefined;
-                        } | {
-                            path: string;
-                            query?: import("vue-router").LocationQueryRaw | undefined;
-                            hash?: string | undefined;
-                            replace?: boolean | undefined;
-                            force?: boolean | undefined;
-                            state?: import("vue-router").HistoryState | undefined;
-                        } | undefined;
-                        class: string;
-                        isActive: boolean;
-                        downloadFileName: string;
-                        disabled: boolean;
-                        onClick: Function | undefined;
-                        confirmModal: import("lkt-vue-kernel").ValidModalName;
-                        confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                        confirmData: import("lkt-vue-kernel").LktObject;
-                        imposter: boolean;
-                        external: boolean;
-                        text?: import("lkt-vue-kernel").ValidTextValue;
-                        events?: {
-                            click?: Function | undefined;
-                        } | undefined;
-                        getHref: () => string;
-                        feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                        assignProp: (key: string, value: any) => void;
-                    } | undefined;
+                    anchor?: /*elided*/ any | undefined;
                     resource?: string | undefined;
                     resourceData?: import("lkt-vue-kernel").LktObject | undefined;
                     modal?: import("lkt-vue-kernel").ValidModalName;
@@ -3236,43 +2552,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_22: string, __VLS_23: {
                     iconEndOn?: import("lkt-vue-kernel").ValidTextValue;
                     iconEndOff?: import("lkt-vue-kernel").ValidTextValue;
                     dot?: import("lkt-vue-kernel").ValidButtonDot | undefined;
-                    anchor?: /*elided*/ any | {
-                        type: import("lkt-vue-kernel").AnchorType;
-                        to?: string | {
-                            name?: import("vue-router").RouteRecordNameGeneric;
-                            params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                            path?: undefined | undefined;
-                            query?: import("vue-router").LocationQueryRaw | undefined;
-                            hash?: string | undefined;
-                            replace?: boolean | undefined;
-                            force?: boolean | undefined;
-                            state?: import("vue-router").HistoryState | undefined;
-                        } | {
-                            path: string;
-                            query?: import("vue-router").LocationQueryRaw | undefined;
-                            hash?: string | undefined;
-                            replace?: boolean | undefined;
-                            force?: boolean | undefined;
-                            state?: import("vue-router").HistoryState | undefined;
-                        } | undefined;
-                        class: string;
-                        isActive: boolean;
-                        downloadFileName: string;
-                        disabled: boolean;
-                        onClick: Function | undefined;
-                        confirmModal: import("lkt-vue-kernel").ValidModalName;
-                        confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                        confirmData: import("lkt-vue-kernel").LktObject;
-                        imposter: boolean;
-                        external: boolean;
-                        text?: import("lkt-vue-kernel").ValidTextValue;
-                        events?: {
-                            click?: Function | undefined;
-                        } | undefined;
-                        getHref: () => string;
-                        feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                        assignProp: (key: string, value: any) => void;
-                    } | undefined;
+                    anchor?: /*elided*/ any | undefined;
                     resource?: string | undefined;
                     resourceData?: import("lkt-vue-kernel").LktObject | undefined;
                     modal?: import("lkt-vue-kernel").ValidModalName;
@@ -3461,43 +2741,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_22: string, __VLS_23: {
                         iconEndOn?: import("lkt-vue-kernel").ValidTextValue;
                         iconEndOff?: import("lkt-vue-kernel").ValidTextValue;
                         dot?: import("lkt-vue-kernel").ValidButtonDot | undefined;
-                        anchor?: /*elided*/ any | {
-                            type: import("lkt-vue-kernel").AnchorType;
-                            to?: string | {
-                                name?: import("vue-router").RouteRecordNameGeneric;
-                                params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                                path?: undefined | undefined;
-                                query?: import("vue-router").LocationQueryRaw | undefined;
-                                hash?: string | undefined;
-                                replace?: boolean | undefined;
-                                force?: boolean | undefined;
-                                state?: import("vue-router").HistoryState | undefined;
-                            } | {
-                                path: string;
-                                query?: import("vue-router").LocationQueryRaw | undefined;
-                                hash?: string | undefined;
-                                replace?: boolean | undefined;
-                                force?: boolean | undefined;
-                                state?: import("vue-router").HistoryState | undefined;
-                            } | undefined;
-                            class: string;
-                            isActive: boolean;
-                            downloadFileName: string;
-                            disabled: boolean;
-                            onClick: Function | undefined;
-                            confirmModal: import("lkt-vue-kernel").ValidModalName;
-                            confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                            confirmData: import("lkt-vue-kernel").LktObject;
-                            imposter: boolean;
-                            external: boolean;
-                            text?: import("lkt-vue-kernel").ValidTextValue;
-                            events?: {
-                                click?: Function | undefined;
-                            } | undefined;
-                            getHref: () => string;
-                            feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                            assignProp: (key: string, value: any) => void;
-                        } | undefined;
+                        anchor?: /*elided*/ any | undefined;
                         resource?: string | undefined;
                         resourceData?: import("lkt-vue-kernel").LktObject | undefined;
                         modal?: import("lkt-vue-kernel").ValidModalName;
@@ -3610,43 +2854,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_22: string, __VLS_23: {
                         iconEndOn?: import("lkt-vue-kernel").ValidTextValue;
                         iconEndOff?: import("lkt-vue-kernel").ValidTextValue;
                         dot?: import("lkt-vue-kernel").ValidButtonDot | undefined;
-                        anchor?: /*elided*/ any | {
-                            type: import("lkt-vue-kernel").AnchorType;
-                            to?: string | {
-                                name?: import("vue-router").RouteRecordNameGeneric;
-                                params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                                path?: undefined | undefined;
-                                query?: import("vue-router").LocationQueryRaw | undefined;
-                                hash?: string | undefined;
-                                replace?: boolean | undefined;
-                                force?: boolean | undefined;
-                                state?: import("vue-router").HistoryState | undefined;
-                            } | {
-                                path: string;
-                                query?: import("vue-router").LocationQueryRaw | undefined;
-                                hash?: string | undefined;
-                                replace?: boolean | undefined;
-                                force?: boolean | undefined;
-                                state?: import("vue-router").HistoryState | undefined;
-                            } | undefined;
-                            class: string;
-                            isActive: boolean;
-                            downloadFileName: string;
-                            disabled: boolean;
-                            onClick: Function | undefined;
-                            confirmModal: import("lkt-vue-kernel").ValidModalName;
-                            confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                            confirmData: import("lkt-vue-kernel").LktObject;
-                            imposter: boolean;
-                            external: boolean;
-                            text?: import("lkt-vue-kernel").ValidTextValue;
-                            events?: {
-                                click?: Function | undefined;
-                            } | undefined;
-                            getHref: () => string;
-                            feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                            assignProp: (key: string, value: any) => void;
-                        } | undefined;
+                        anchor?: /*elided*/ any | undefined;
                         resource?: string | undefined;
                         resourceData?: import("lkt-vue-kernel").LktObject | undefined;
                         modal?: import("lkt-vue-kernel").ValidModalName;
@@ -3745,42 +2953,6 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_22: string, __VLS_23: {
                     click?: Function | undefined;
                 } | undefined;
                 onClick?: Function | undefined;
-            } | {
-                type: import("lkt-vue-kernel").AnchorType;
-                to?: string | {
-                    name?: import("vue-router").RouteRecordNameGeneric;
-                    params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                    path?: undefined | undefined;
-                    query?: import("vue-router").LocationQueryRaw | undefined;
-                    hash?: string | undefined;
-                    replace?: boolean | undefined;
-                    force?: boolean | undefined;
-                    state?: import("vue-router").HistoryState | undefined;
-                } | {
-                    path: string;
-                    query?: import("vue-router").LocationQueryRaw | undefined;
-                    hash?: string | undefined;
-                    replace?: boolean | undefined;
-                    force?: boolean | undefined;
-                    state?: import("vue-router").HistoryState | undefined;
-                } | undefined;
-                class: string;
-                isActive: boolean;
-                downloadFileName: string;
-                disabled: boolean;
-                onClick: Function | undefined;
-                confirmModal: import("lkt-vue-kernel").ValidModalName;
-                confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                confirmData: import("lkt-vue-kernel").LktObject;
-                imposter: boolean;
-                external: boolean;
-                text?: import("lkt-vue-kernel").ValidTextValue;
-                events?: {
-                    click?: Function | undefined;
-                } | undefined;
-                getHref: () => string;
-                feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                assignProp: (key: string, value: any) => void;
             } | undefined;
             resource?: string | undefined;
             resourceData?: import("lkt-vue-kernel").LktObject | undefined;
@@ -3883,42 +3055,6 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_22: string, __VLS_23: {
                             click?: Function | undefined;
                         } | undefined;
                         onClick?: Function | undefined;
-                    } | {
-                        type: import("lkt-vue-kernel").AnchorType;
-                        to?: string | {
-                            name?: import("vue-router").RouteRecordNameGeneric;
-                            params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                            path?: undefined | undefined;
-                            query?: import("vue-router").LocationQueryRaw | undefined;
-                            hash?: string | undefined;
-                            replace?: boolean | undefined;
-                            force?: boolean | undefined;
-                            state?: import("vue-router").HistoryState | undefined;
-                        } | {
-                            path: string;
-                            query?: import("vue-router").LocationQueryRaw | undefined;
-                            hash?: string | undefined;
-                            replace?: boolean | undefined;
-                            force?: boolean | undefined;
-                            state?: import("vue-router").HistoryState | undefined;
-                        } | undefined;
-                        class: string;
-                        isActive: boolean;
-                        downloadFileName: string;
-                        disabled: boolean;
-                        onClick: Function | undefined;
-                        confirmModal: import("lkt-vue-kernel").ValidModalName;
-                        confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                        confirmData: import("lkt-vue-kernel").LktObject;
-                        imposter: boolean;
-                        external: boolean;
-                        text?: import("lkt-vue-kernel").ValidTextValue;
-                        events?: {
-                            click?: Function | undefined;
-                        } | undefined;
-                        getHref: () => string;
-                        feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                        assignProp: (key: string, value: any) => void;
                     } | undefined;
                     resource?: string | undefined;
                     resourceData?: import("lkt-vue-kernel").LktObject | undefined;
@@ -4043,42 +3179,6 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_22: string, __VLS_23: {
                             click?: Function | undefined;
                         } | undefined;
                         onClick?: Function | undefined;
-                    } | {
-                        type: import("lkt-vue-kernel").AnchorType;
-                        to?: string | {
-                            name?: import("vue-router").RouteRecordNameGeneric;
-                            params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                            path?: undefined | undefined;
-                            query?: import("vue-router").LocationQueryRaw | undefined;
-                            hash?: string | undefined;
-                            replace?: boolean | undefined;
-                            force?: boolean | undefined;
-                            state?: import("vue-router").HistoryState | undefined;
-                        } | {
-                            path: string;
-                            query?: import("vue-router").LocationQueryRaw | undefined;
-                            hash?: string | undefined;
-                            replace?: boolean | undefined;
-                            force?: boolean | undefined;
-                            state?: import("vue-router").HistoryState | undefined;
-                        } | undefined;
-                        class: string;
-                        isActive: boolean;
-                        downloadFileName: string;
-                        disabled: boolean;
-                        onClick: Function | undefined;
-                        confirmModal: import("lkt-vue-kernel").ValidModalName;
-                        confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                        confirmData: import("lkt-vue-kernel").LktObject;
-                        imposter: boolean;
-                        external: boolean;
-                        text?: import("lkt-vue-kernel").ValidTextValue;
-                        events?: {
-                            click?: Function | undefined;
-                        } | undefined;
-                        getHref: () => string;
-                        feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                        assignProp: (key: string, value: any) => void;
                     } | undefined;
                     resource?: string | undefined;
                     resourceData?: import("lkt-vue-kernel").LktObject | undefined;
@@ -4226,42 +3326,6 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_22: string, __VLS_23: {
                             click?: Function | undefined;
                         } | undefined;
                         onClick?: Function | undefined;
-                    } | {
-                        type: import("lkt-vue-kernel").AnchorType;
-                        to?: string | {
-                            name?: import("vue-router").RouteRecordNameGeneric;
-                            params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                            path?: undefined | undefined;
-                            query?: import("vue-router").LocationQueryRaw | undefined;
-                            hash?: string | undefined;
-                            replace?: boolean | undefined;
-                            force?: boolean | undefined;
-                            state?: import("vue-router").HistoryState | undefined;
-                        } | {
-                            path: string;
-                            query?: import("vue-router").LocationQueryRaw | undefined;
-                            hash?: string | undefined;
-                            replace?: boolean | undefined;
-                            force?: boolean | undefined;
-                            state?: import("vue-router").HistoryState | undefined;
-                        } | undefined;
-                        class: string;
-                        isActive: boolean;
-                        downloadFileName: string;
-                        disabled: boolean;
-                        onClick: Function | undefined;
-                        confirmModal: import("lkt-vue-kernel").ValidModalName;
-                        confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                        confirmData: import("lkt-vue-kernel").LktObject;
-                        imposter: boolean;
-                        external: boolean;
-                        text?: import("lkt-vue-kernel").ValidTextValue;
-                        events?: {
-                            click?: Function | undefined;
-                        } | undefined;
-                        getHref: () => string;
-                        feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                        assignProp: (key: string, value: any) => void;
                     } | undefined;
                     resource?: string | undefined;
                     resourceData?: import("lkt-vue-kernel").LktObject | undefined;
@@ -4386,42 +3450,6 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_22: string, __VLS_23: {
                             click?: Function | undefined;
                         } | undefined;
                         onClick?: Function | undefined;
-                    } | {
-                        type: import("lkt-vue-kernel").AnchorType;
-                        to?: string | {
-                            name?: import("vue-router").RouteRecordNameGeneric;
-                            params?: import("vue-router").RouteParamsRawGeneric | undefined;
-                            path?: undefined | undefined;
-                            query?: import("vue-router").LocationQueryRaw | undefined;
-                            hash?: string | undefined;
-                            replace?: boolean | undefined;
-                            force?: boolean | undefined;
-                            state?: import("vue-router").HistoryState | undefined;
-                        } | {
-                            path: string;
-                            query?: import("vue-router").LocationQueryRaw | undefined;
-                            hash?: string | undefined;
-                            replace?: boolean | undefined;
-                            force?: boolean | undefined;
-                            state?: import("vue-router").HistoryState | undefined;
-                        } | undefined;
-                        class: string;
-                        isActive: boolean;
-                        downloadFileName: string;
-                        disabled: boolean;
-                        onClick: Function | undefined;
-                        confirmModal: import("lkt-vue-kernel").ValidModalName;
-                        confirmModalKey: import("lkt-vue-kernel").ValidModalKey;
-                        confirmData: import("lkt-vue-kernel").LktObject;
-                        imposter: boolean;
-                        external: boolean;
-                        text?: import("lkt-vue-kernel").ValidTextValue;
-                        events?: {
-                            click?: Function | undefined;
-                        } | undefined;
-                        getHref: () => string;
-                        feed: (data?: import("lkt-vue-kernel").LktObject, target?: import("lkt-vue-kernel").Anchor | undefined) => void;
-                        assignProp: (key: string, value: any) => void;
                     } | undefined;
                     resource?: string | undefined;
                     resourceData?: import("lkt-vue-kernel").LktObject | undefined;
@@ -4511,12 +3539,12 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_22: string, __VLS_23: {
         isActiveChecker?: Function | undefined;
         isOpened?: boolean | undefined;
         isActive?: boolean | undefined;
+        keepOpenOnChildClick?: boolean | undefined;
         parent?: /*elided*/ any | undefined;
         children?: /*elided*/ any[] | undefined;
         events?: {
             click?: Function | undefined;
         } | undefined;
-        onClick?: Function | undefined;
     };
 }, __VLS_34: string, __VLS_35: {};
 type __VLS_Slots = __VLS_PrettifyGlobal<__VLS_OmitStringIndex<typeof __VLS_ctx.$slots> & {
