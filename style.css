@@ -1,4 +1,4 @@
-.lkt-menu {
+.lkt-menu-main {
     background: var(--lkt-menu--background);
     padding: var(--lkt-menu--padding);
     max-width: var(--lkt-menu--max-width);
@@ -51,8 +51,8 @@
 }
 
 .lkt-menu-outside {
-    position: fixed;
-    top: 64px;
+    position: absolute;
+    top: 0;
     right: 0;
     left: 0;
     bottom: 0;

@@ -2363,13 +2363,15 @@ declare const entries: import("vue").Ref<{
 declare const entryIconSlots: import("vue").ComputedRef<LktObject>;
 declare const onClickOutside: () => void;
 declare const __VLS_ctx: InstanceType<__VLS_PickNotAny<typeof __VLS_self, new () => {}>>;
-declare var __VLS_5: any, __VLS_6: {}, __VLS_9: `tooltip-${string}`, __VLS_10: {}, __VLS_13: `split-${string}`, __VLS_14: {};
+declare var __VLS_1: {}, __VLS_7: any, __VLS_8: {}, __VLS_11: `tooltip-${string}`, __VLS_12: {}, __VLS_15: `split-${string}`, __VLS_16: {};
 type __VLS_Slots = __VLS_PrettifyGlobal<__VLS_OmitStringIndex<typeof __VLS_ctx.$slots> & {
-    [K in NonNullable<typeof __VLS_5>]?: (props: typeof __VLS_6) => any;
+    [K in NonNullable<typeof __VLS_7>]?: (props: typeof __VLS_8) => any;
 } & {
-    [K in NonNullable<typeof __VLS_9>]?: (props: typeof __VLS_10) => any;
+    [K in NonNullable<typeof __VLS_11>]?: (props: typeof __VLS_12) => any;
 } & {
-    [K in NonNullable<typeof __VLS_13>]?: (props: typeof __VLS_14) => any;
+    [K in NonNullable<typeof __VLS_15>]?: (props: typeof __VLS_16) => any;
+} & {
+    before?: (props: typeof __VLS_1) => any;
 }>;
 declare const __VLS_self: import("vue").DefineComponent<MenuConfig, {
     MenuItem: typeof MenuItem;

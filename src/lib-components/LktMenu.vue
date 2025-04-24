@@ -85,21 +85,26 @@
 </script>
 
 <template>
-    <div class="lkt-menu-container">
-        <div class="lkt-menu">
-            <menu-item v-for="(entry, i) in entries" v-model="entries[i]" :key="entry.key" :class="entry.class">
-                <template v-for="slot in entryIconSlots" v-slot:[slot]>
-                    <slot :name="slot" />
-                </template>
+    <div class="lkt-menu">
+        <div class="lkt-menu-main">
+            <template v-if="slots.before">
+                <slot name="before"/>
+            </template>
+            <div class="lkt-menu-entries">
+                <menu-item v-for="(entry, i) in entries" v-model="entries[i]" :key="entry.key" :class="entry.class">
+                    <template v-for="slot in entryIconSlots" v-slot:[slot]>
+                        <slot :name="slot" />
+                    </template>
 
-                <template v-if="slots[`tooltip-${entry.key}`]" #tooltip>
-                    <slot :name="`tooltip-${entry.key}`"/>
-                </template>
+                    <template v-if="slots[`tooltip-${entry.key}`]" #tooltip>
+                        <slot :name="`tooltip-${entry.key}`"/>
+                    </template>
 
-                <template v-if="slots[`split-${entry.key}`]" #split>
-                    <slot :name="`split-${entry.key}`"/>
-                </template>
-            </menu-item>
+                    <template v-if="slots[`split-${entry.key}`]" #split>
+                        <slot :name="`split-${entry.key}`"/>
+                    </template>
+                </menu-item>
+            </div>
         </div>
         <div class="lkt-menu-outside" v-on:click="onClickOutside" />
     </div>
