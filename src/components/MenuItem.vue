@@ -122,6 +122,11 @@
                 </template>
             </lkt-button>
 
+            <lkt-header
+                v-else-if="entry.type === MenuEntryType.Header"
+                v-bind="entry.header"
+            />
+
             <lkt-anchor
                 v-else-if="entry.type === MenuEntryType.Anchor"
                 v-bind="entry.anchor"
