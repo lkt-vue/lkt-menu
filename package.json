@@ -1,6 +1,6 @@
 {
   "name": "lkt-menu",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "",
   "keywords": [
     "lkt",
@@ -25,7 +25,6 @@
   "types": "./dist/build.d.ts",
   "files": [
     "dist/*",
-    "src/**/*.vue",
     "theme/**/*.css"
   ],
   "license": "MIT",
