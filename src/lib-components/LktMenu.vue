@@ -1,7 +1,7 @@
 <script setup lang="ts">
     import MenuItem from '../components/MenuItem.vue';
-    import { computed, ref, useSlots, watch } from 'vue';
-    import { getDefaultValues, LktObject, Menu, MenuConfig } from 'lkt-vue-kernel';
+    import { computed, onMounted, ref, useSlots, watch } from 'vue';
+    import { getDefaultValues, LktObject, Menu, MenuConfig, MenuController } from 'lkt-vue-kernel';
     import { fetchKeys } from '../functions/helpers';
     import { DataState } from 'lkt-data-state';
     import { httpCall, HTTPResponse } from 'lkt-http-client';
@@ -16,6 +16,8 @@
         'response',
         'error',
     ]);
+
+    const isVisible = ref(false);
 
     const slots = useSlots();
 
@@ -33,6 +35,20 @@
         }
         return d;
     };
+
+    watch(() => MenuController.config.value, (v) => {
+        // console.log('updated controller config: ', v);
+    }, {deep: true})
+
+    const computedClassName = computed(() => {
+        let r = [];
+
+        if (isVisible.value) r.push('is-visible');
+
+        return r.join(' ');
+    });
+
+
     let resourceDataState = new DataState({});
     resourceDataState.increment(parseFilters(props.http?.data ?? {}));
 
@@ -81,17 +97,20 @@
         emit('update:modelValue', v);
     }, { deep: true });
 
-    loadResource();
+    onMounted(() => {
+        MenuController.addMenu(props.menuKey, isVisible)
+        loadResource();
+    })
 </script>
 
 <template>
-    <div class="lkt-menu">
+    <div class="lkt-menu" :class="computedClassName">
         <div class="lkt-menu-main">
             <template v-if="slots.before">
                 <slot name="before"/>
             </template>
             <div class="lkt-menu-entries">
-                <menu-item v-for="(entry, i) in entries" v-model="entries[i]" :key="entry.key" :class="entry.class">
+                <menu-item v-for="(entry, i) in entries" v-model="entries[i]" :class="entry.class">
                     <template v-for="slot in entryIconSlots" v-slot:[slot]>
                         <slot :name="slot" />
                     </template>

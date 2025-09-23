@@ -1,5 +1,5 @@
 declare namespace Ve {
-    function install(r: any): void;
+    function install(a: any): void;
 }
-declare function $e(r: any): boolean;
-export { Ve as default, $e as setMenuToggleSlot };
+declare function be(a: any): boolean;
+export { Ve as default, be as setMenuToggleSlot };
