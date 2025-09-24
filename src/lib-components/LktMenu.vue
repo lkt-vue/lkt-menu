@@ -1,7 +1,7 @@
 <script setup lang="ts">
     import MenuItem from '../components/MenuItem.vue';
     import { computed, onMounted, ref, useSlots, watch } from 'vue';
-    import { getDefaultValues, LktObject, Menu, MenuConfig, MenuController } from 'lkt-vue-kernel';
+    import { getDefaultValues, LktObject, Menu, MenuConfig, MenuController, MenuType } from 'lkt-vue-kernel';
     import { fetchKeys } from '../functions/helpers';
     import { DataState } from 'lkt-data-state';
     import { httpCall, HTTPResponse } from 'lkt-http-client';
@@ -37,13 +37,19 @@
     };
 
     watch(() => MenuController.config.value, (v) => {
-        // console.log('updated controller config: ', v);
     }, {deep: true})
 
     const computedClassName = computed(() => {
-        let r = [];
+        let r = [
+            `type-${props.type}`,
+        ];
 
+        if (props.menuKey) r.push(props.menuKey);
         if (isVisible.value) r.push('is-visible');
+
+        if (props.type === MenuType.Hidden) {
+            r.push(`${props.hiddenPosition}-hidden`)
+        }
 
         return r.join(' ');
     });
@@ -86,6 +92,9 @@
         };
 
     const onClickOutside = () => {
+        if (props.closeOnClickOutside) {
+            MenuController.closeMenu(props.menuKey);
+        }
         emit('click-outside');
     };
 

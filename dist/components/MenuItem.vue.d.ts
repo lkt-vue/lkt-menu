@@ -193,6 +193,7 @@ declare const entry: import("vue").Ref<{
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;
@@ -372,6 +373,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -570,6 +572,7 @@ declare const entry: import("vue").Ref<{
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;
@@ -749,6 +752,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -947,6 +951,7 @@ declare const entry: import("vue").Ref<{
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;
@@ -1126,6 +1131,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -1470,6 +1476,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -1659,6 +1666,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -1848,6 +1856,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -2097,6 +2106,7 @@ declare const entry: import("vue").Ref<{
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;
@@ -2300,6 +2310,7 @@ declare const entry: import("vue").Ref<{
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;
@@ -2503,6 +2514,7 @@ declare const entry: import("vue").Ref<{
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;
@@ -2729,6 +2741,7 @@ declare const entry: import("vue").Ref<{
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;
@@ -2932,6 +2945,7 @@ declare const entry: import("vue").Ref<{
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;
@@ -3135,6 +3149,7 @@ declare const entry: import("vue").Ref<{
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;
@@ -3182,6 +3197,7 @@ declare const entry: import("vue").Ref<{
             method?: string | undefined;
             args?: import("lkt-vue-kernel").LktObject | undefined;
         }[] | undefined;
+        menuKey?: import("lkt-vue-kernel").ValidModalKey;
         tooltip?: {
             modelValue?: boolean | undefined;
             alwaysOpen?: boolean | undefined;
@@ -3511,6 +3527,7 @@ declare const entry: import("vue").Ref<{
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -3700,6 +3717,7 @@ declare const entry: import("vue").Ref<{
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -3889,6 +3907,7 @@ declare const entry: import("vue").Ref<{
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -4138,6 +4157,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -4341,6 +4361,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -4544,6 +4565,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -4770,6 +4792,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -4973,6 +4996,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -5176,6 +5200,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -5223,6 +5248,7 @@ declare const entry: import("vue").Ref<{
                 method?: string | undefined;
                 args?: import("lkt-vue-kernel").LktObject | undefined;
             }[] | undefined;
+            menuKey?: import("lkt-vue-kernel").ValidModalKey;
             tooltip?: {
                 modelValue?: boolean | undefined;
                 alwaysOpen?: boolean | undefined;
@@ -5536,6 +5562,7 @@ declare const entry: import("vue").Ref<{
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -5725,6 +5752,7 @@ declare const entry: import("vue").Ref<{
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -5914,6 +5942,7 @@ declare const entry: import("vue").Ref<{
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -6163,6 +6192,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -6366,6 +6396,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -6569,6 +6600,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -6795,6 +6827,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -6998,6 +7031,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -7201,6 +7235,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -7248,6 +7283,7 @@ declare const entry: import("vue").Ref<{
                 method?: string | undefined;
                 args?: import("lkt-vue-kernel").LktObject | undefined;
             }[] | undefined;
+            menuKey?: import("lkt-vue-kernel").ValidModalKey;
             tooltip?: {
                 modelValue?: boolean | undefined;
                 alwaysOpen?: boolean | undefined;
@@ -7561,6 +7597,7 @@ declare const entry: import("vue").Ref<{
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -7750,6 +7787,7 @@ declare const entry: import("vue").Ref<{
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -7939,6 +7977,7 @@ declare const entry: import("vue").Ref<{
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -8188,6 +8227,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -8391,6 +8431,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -8594,6 +8635,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -8820,6 +8862,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -9023,6 +9066,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -9226,6 +9270,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -9273,6 +9318,7 @@ declare const entry: import("vue").Ref<{
                 method?: string | undefined;
                 args?: import("lkt-vue-kernel").LktObject | undefined;
             }[] | undefined;
+            menuKey?: import("lkt-vue-kernel").ValidModalKey;
             tooltip?: {
                 modelValue?: boolean | undefined;
                 alwaysOpen?: boolean | undefined;
@@ -9513,6 +9559,7 @@ declare const entry: import("vue").Ref<{
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;
@@ -9692,6 +9739,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -9890,6 +9938,7 @@ declare const entry: import("vue").Ref<{
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;
@@ -10069,6 +10118,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -10267,6 +10317,7 @@ declare const entry: import("vue").Ref<{
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;
@@ -10446,6 +10497,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -10790,6 +10842,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -10979,6 +11032,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -11168,6 +11222,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -11417,6 +11472,7 @@ declare const entry: import("vue").Ref<{
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;
@@ -11620,6 +11676,7 @@ declare const entry: import("vue").Ref<{
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;
@@ -11823,6 +11880,7 @@ declare const entry: import("vue").Ref<{
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;
@@ -12049,6 +12107,7 @@ declare const entry: import("vue").Ref<{
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;
@@ -12252,6 +12311,7 @@ declare const entry: import("vue").Ref<{
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;
@@ -12455,6 +12515,7 @@ declare const entry: import("vue").Ref<{
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;
@@ -12502,6 +12563,7 @@ declare const entry: import("vue").Ref<{
             method?: string | undefined;
             args?: import("lkt-vue-kernel").LktObject | undefined;
         }[] | undefined;
+        menuKey?: import("lkt-vue-kernel").ValidModalKey;
         tooltip?: {
             modelValue?: boolean | undefined;
             alwaysOpen?: boolean | undefined;
@@ -12831,6 +12893,7 @@ declare const entry: import("vue").Ref<{
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -13020,6 +13083,7 @@ declare const entry: import("vue").Ref<{
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -13209,6 +13273,7 @@ declare const entry: import("vue").Ref<{
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -13458,6 +13523,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -13661,6 +13727,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -13864,6 +13931,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -14090,6 +14158,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -14293,6 +14362,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -14496,6 +14566,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -14543,6 +14614,7 @@ declare const entry: import("vue").Ref<{
                 method?: string | undefined;
                 args?: import("lkt-vue-kernel").LktObject | undefined;
             }[] | undefined;
+            menuKey?: import("lkt-vue-kernel").ValidModalKey;
             tooltip?: {
                 modelValue?: boolean | undefined;
                 alwaysOpen?: boolean | undefined;
@@ -14856,6 +14928,7 @@ declare const entry: import("vue").Ref<{
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -15045,6 +15118,7 @@ declare const entry: import("vue").Ref<{
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -15234,6 +15308,7 @@ declare const entry: import("vue").Ref<{
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -15483,6 +15558,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -15686,6 +15762,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -15889,6 +15966,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -16115,6 +16193,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -16318,6 +16397,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -16521,6 +16601,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -16568,6 +16649,7 @@ declare const entry: import("vue").Ref<{
                 method?: string | undefined;
                 args?: import("lkt-vue-kernel").LktObject | undefined;
             }[] | undefined;
+            menuKey?: import("lkt-vue-kernel").ValidModalKey;
             tooltip?: {
                 modelValue?: boolean | undefined;
                 alwaysOpen?: boolean | undefined;
@@ -16881,6 +16963,7 @@ declare const entry: import("vue").Ref<{
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -17070,6 +17153,7 @@ declare const entry: import("vue").Ref<{
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -17259,6 +17343,7 @@ declare const entry: import("vue").Ref<{
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -17508,6 +17593,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -17711,6 +17797,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -17914,6 +18001,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -18140,6 +18228,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -18343,6 +18432,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -18546,6 +18636,7 @@ declare const entry: import("vue").Ref<{
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -18593,6 +18684,7 @@ declare const entry: import("vue").Ref<{
                 method?: string | undefined;
                 args?: import("lkt-vue-kernel").LktObject | undefined;
             }[] | undefined;
+            menuKey?: import("lkt-vue-kernel").ValidModalKey;
             tooltip?: {
                 modelValue?: boolean | undefined;
                 alwaysOpen?: boolean | undefined;
@@ -18842,6 +18934,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -19021,6 +19114,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -19219,6 +19313,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -19398,6 +19493,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -19596,6 +19692,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -19775,6 +19872,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -20119,6 +20217,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -20308,6 +20407,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -20497,6 +20597,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -20746,6 +20847,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -20949,6 +21051,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -21152,6 +21255,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -21378,6 +21482,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -21581,6 +21686,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -21784,6 +21890,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         method?: string | undefined;
                         args?: import("lkt-vue-kernel").LktObject | undefined;
                     }[] | undefined;
+                    menuKey?: import("lkt-vue-kernel").ValidModalKey;
                     tooltip?: {
                         modelValue?: boolean | undefined;
                         alwaysOpen?: boolean | undefined;
@@ -21831,6 +21938,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                 method?: string | undefined;
                 args?: import("lkt-vue-kernel").LktObject | undefined;
             }[] | undefined;
+            menuKey?: import("lkt-vue-kernel").ValidModalKey;
             tooltip?: {
                 modelValue?: boolean | undefined;
                 alwaysOpen?: boolean | undefined;
@@ -22160,6 +22268,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                                 method?: string | undefined;
                                 args?: import("lkt-vue-kernel").LktObject | undefined;
                             }[] | undefined;
+                            menuKey?: import("lkt-vue-kernel").ValidModalKey;
                             tooltip?: {
                                 modelValue?: boolean | undefined;
                                 alwaysOpen?: boolean | undefined;
@@ -22349,6 +22458,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                                 method?: string | undefined;
                                 args?: import("lkt-vue-kernel").LktObject | undefined;
                             }[] | undefined;
+                            menuKey?: import("lkt-vue-kernel").ValidModalKey;
                             tooltip?: {
                                 modelValue?: boolean | undefined;
                                 alwaysOpen?: boolean | undefined;
@@ -22538,6 +22648,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                                 method?: string | undefined;
                                 args?: import("lkt-vue-kernel").LktObject | undefined;
                             }[] | undefined;
+                            menuKey?: import("lkt-vue-kernel").ValidModalKey;
                             tooltip?: {
                                 modelValue?: boolean | undefined;
                                 alwaysOpen?: boolean | undefined;
@@ -22787,6 +22898,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -22990,6 +23102,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -23193,6 +23306,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -23419,6 +23533,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -23622,6 +23737,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -23825,6 +23941,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -23872,6 +23989,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;
@@ -24185,6 +24303,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                                 method?: string | undefined;
                                 args?: import("lkt-vue-kernel").LktObject | undefined;
                             }[] | undefined;
+                            menuKey?: import("lkt-vue-kernel").ValidModalKey;
                             tooltip?: {
                                 modelValue?: boolean | undefined;
                                 alwaysOpen?: boolean | undefined;
@@ -24374,6 +24493,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                                 method?: string | undefined;
                                 args?: import("lkt-vue-kernel").LktObject | undefined;
                             }[] | undefined;
+                            menuKey?: import("lkt-vue-kernel").ValidModalKey;
                             tooltip?: {
                                 modelValue?: boolean | undefined;
                                 alwaysOpen?: boolean | undefined;
@@ -24563,6 +24683,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                                 method?: string | undefined;
                                 args?: import("lkt-vue-kernel").LktObject | undefined;
                             }[] | undefined;
+                            menuKey?: import("lkt-vue-kernel").ValidModalKey;
                             tooltip?: {
                                 modelValue?: boolean | undefined;
                                 alwaysOpen?: boolean | undefined;
@@ -24812,6 +24933,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -25015,6 +25137,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -25218,6 +25341,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -25444,6 +25568,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -25647,6 +25772,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -25850,6 +25976,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -25897,6 +26024,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;
@@ -26210,6 +26338,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                                 method?: string | undefined;
                                 args?: import("lkt-vue-kernel").LktObject | undefined;
                             }[] | undefined;
+                            menuKey?: import("lkt-vue-kernel").ValidModalKey;
                             tooltip?: {
                                 modelValue?: boolean | undefined;
                                 alwaysOpen?: boolean | undefined;
@@ -26399,6 +26528,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                                 method?: string | undefined;
                                 args?: import("lkt-vue-kernel").LktObject | undefined;
                             }[] | undefined;
+                            menuKey?: import("lkt-vue-kernel").ValidModalKey;
                             tooltip?: {
                                 modelValue?: boolean | undefined;
                                 alwaysOpen?: boolean | undefined;
@@ -26588,6 +26718,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                                 method?: string | undefined;
                                 args?: import("lkt-vue-kernel").LktObject | undefined;
                             }[] | undefined;
+                            menuKey?: import("lkt-vue-kernel").ValidModalKey;
                             tooltip?: {
                                 modelValue?: boolean | undefined;
                                 alwaysOpen?: boolean | undefined;
@@ -26837,6 +26968,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -27040,6 +27172,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -27243,6 +27376,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -27469,6 +27603,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -27672,6 +27807,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -27875,6 +28011,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             method?: string | undefined;
                             args?: import("lkt-vue-kernel").LktObject | undefined;
                         }[] | undefined;
+                        menuKey?: import("lkt-vue-kernel").ValidModalKey;
                         tooltip?: {
                             modelValue?: boolean | undefined;
                             alwaysOpen?: boolean | undefined;
@@ -27922,6 +28059,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     method?: string | undefined;
                     args?: import("lkt-vue-kernel").LktObject | undefined;
                 }[] | undefined;
+                menuKey?: import("lkt-vue-kernel").ValidModalKey;
                 tooltip?: {
                     modelValue?: boolean | undefined;
                     alwaysOpen?: boolean | undefined;

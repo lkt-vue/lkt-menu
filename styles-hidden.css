@@ -1,0 +1,49 @@
+.lkt-menu.type-hidden {
+    position: fixed;
+    top: var(--lkt-menu--container--top);
+    bottom: var(--lkt-menu--container--bottom);
+    width: 100%;
+    background: var(--lkt-menu--container--background);
+    transition: var(--lkt-menu--container--transition);
+    z-index: 400;
+}
+
+.lkt-menu.type-hidden .lkt-menu-main {
+    z-index: 402;
+}
+
+.lkt-menu.type-hidden .lkt-menu-outside {
+    z-index: 401;
+}
+
+.lkt-menu.type-hidden .lkt-menu-outside {
+    opacity: 0;
+    transition: all linear 400ms 100ms;
+}
+
+.lkt-menu.type-hidden.is-visible .lkt-menu-outside {
+    opacity: 1;
+}
+
+/**
+ * Left hidden
+ */
+.lkt-menu.type-hidden.left-hidden {
+    left: -100%;
+}
+
+.lkt-menu.type-hidden.left-hidden.is-visible {
+    left: 0;
+}
+
+/**
+ * Right hidden
+ */
+.lkt-menu.type-hidden.right-hidden {
+    justify-content: flex-end;
+    right: -100%;
+}
+
+.lkt-menu.type-hidden.right-hidden.is-visible {
+    right: 0;
+}

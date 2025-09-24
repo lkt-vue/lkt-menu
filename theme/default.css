@@ -32,4 +32,12 @@
 
     /** Event: Hover */
     --lkt-menu--hover--text-decoration: none;
+
+    /** Element: Container */
+    --lkt-menu--container--width: 100%;
+    --lkt-menu--container--top: 0;
+    --lkt-menu--container--bottom: 0;
+    --lkt-menu--container--background: transparent;
+    --lkt-menu--container--transition: all linear 100ms;
+    --lkt-menu--container--max-height: 100%;
 }

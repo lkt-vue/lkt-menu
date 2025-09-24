@@ -1,3 +1,10 @@
+.lkt-menu {
+    width: var(--lkt-menu--container--width);
+    overflow: auto;
+    max-height: var(--lkt-menu--container--max-height);
+    display: flex;
+}
+
 .lkt-menu-main {
     background: var(--lkt-menu--background);
     padding: var(--lkt-menu--padding);
@@ -8,6 +15,7 @@
     flex-direction: var(--lkt-menu--flex-direction);
     align-items: var(--lkt-menu--align-items);
     gap: var(--lkt-menu--entry--gap);
+    position: relative;
 }
 
 .lkt-menu-entry-toggle-inner {
@@ -15,7 +23,7 @@
 }
 
 .lkt-menu-entry-toggle-inner.is-opened {
-    transform: rotatez(180deg);
+    transform: rotateZ(180deg);
 }
 
 .lkt-entry-content {

@@ -1,6 +1,7 @@
 import { App, Component, Plugin } from 'vue';
 
 import '../style.css';
+import '../styles-hidden.css';
 import { default as libComponent } from './lib-components/LktMenu.vue';
 import { Settings } from './settings/Settings';
 

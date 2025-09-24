@@ -1,5 +1,5 @@
-declare namespace Ve {
+declare namespace Ce {
     function install(a: any): void;
 }
-declare function be(a: any): boolean;
-export { Ve as default, be as setMenuToggleSlot };
+declare function Oe(a: any): boolean;
+export { Ce as default, Oe as setMenuToggleSlot };
