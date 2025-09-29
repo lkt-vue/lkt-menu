@@ -1,5 +1,5 @@
-declare namespace Ce {
-    function install(a: any): void;
+declare namespace $e {
+    function install(s: any): void;
 }
-declare function Oe(a: any): boolean;
-export { Ce as default, Oe as setMenuToggleSlot };
+declare function Oe(s: any): boolean;
+export { $e as default, Oe as setMenuToggleSlot };

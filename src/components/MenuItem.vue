@@ -108,7 +108,7 @@
 </script>
 
 <template>
-    <div class="lkt-menu-entry" :class="classes">
+    <div class="lkt-menu-entry" :class="classes" :id="`entry-${entry.key}`">
         <div class="lkt-menu-entry-main">
             <lkt-button
                 v-if="entry.type === MenuEntryType.Button"

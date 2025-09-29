@@ -52,7 +52,7 @@ declare const entry: import("vue").Ref<{
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -232,7 +232,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -406,6 +406,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -415,6 +419,10 @@ declare const entry: import("vue").Ref<{
                 }[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -431,7 +439,7 @@ declare const entry: import("vue").Ref<{
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -611,7 +619,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -785,6 +793,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -794,6 +806,10 @@ declare const entry: import("vue").Ref<{
                 }[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -810,7 +826,7 @@ declare const entry: import("vue").Ref<{
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -990,7 +1006,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -1164,6 +1180,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -1173,6 +1193,10 @@ declare const entry: import("vue").Ref<{
                 }[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -1211,7 +1235,7 @@ declare const entry: import("vue").Ref<{
         loading?: boolean | undefined;
         class?: string | undefined;
         containerClass?: string | undefined;
-        wrapContent?: boolean | undefined;
+        wrapButton?: boolean | undefined;
         text?: import("lkt-vue-kernel").ValidTextValue;
         icon?: string | {
             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -1335,7 +1359,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -1509,6 +1533,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -1525,7 +1553,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -1699,6 +1727,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -1715,7 +1747,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -1889,6 +1921,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -1951,7 +1987,7 @@ declare const entry: import("vue").Ref<{
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -2139,6 +2175,10 @@ declare const entry: import("vue").Ref<{
                 splitButtons?: /*elided*/ any[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -2155,7 +2195,7 @@ declare const entry: import("vue").Ref<{
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -2343,6 +2383,10 @@ declare const entry: import("vue").Ref<{
                 splitButtons?: /*elided*/ any[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -2359,7 +2403,7 @@ declare const entry: import("vue").Ref<{
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -2547,6 +2591,10 @@ declare const entry: import("vue").Ref<{
                 splitButtons?: /*elided*/ any[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -2586,7 +2634,7 @@ declare const entry: import("vue").Ref<{
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -2774,6 +2822,10 @@ declare const entry: import("vue").Ref<{
                 splitButtons?: /*elided*/ any[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -2790,7 +2842,7 @@ declare const entry: import("vue").Ref<{
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -2978,6 +3030,10 @@ declare const entry: import("vue").Ref<{
                 splitButtons?: /*elided*/ any[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -2994,7 +3050,7 @@ declare const entry: import("vue").Ref<{
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -3182,6 +3238,10 @@ declare const entry: import("vue").Ref<{
                 splitButtons?: /*elided*/ any[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -3230,6 +3290,10 @@ declare const entry: import("vue").Ref<{
         splitButtons?: /*elided*/ any[] | undefined;
         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
         prop?: import("lkt-vue-kernel").LktObject | undefined;
+        aria?: {
+            controls?: string | undefined;
+            selected?: boolean | undefined;
+        } | undefined;
         clickRef?: (Element | import("vue").VueElement) | undefined;
         events?: {
             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -3262,7 +3326,7 @@ declare const entry: import("vue").Ref<{
             loading?: boolean | undefined;
             class?: string | undefined;
             containerClass?: string | undefined;
-            wrapContent?: boolean | undefined;
+            wrapButton?: boolean | undefined;
             text?: import("lkt-vue-kernel").ValidTextValue;
             icon?: string | {
                 icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -3386,7 +3450,7 @@ declare const entry: import("vue").Ref<{
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -3560,6 +3624,10 @@ declare const entry: import("vue").Ref<{
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -3576,7 +3644,7 @@ declare const entry: import("vue").Ref<{
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -3750,6 +3818,10 @@ declare const entry: import("vue").Ref<{
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -3766,7 +3838,7 @@ declare const entry: import("vue").Ref<{
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -3940,6 +4012,10 @@ declare const entry: import("vue").Ref<{
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -4002,7 +4078,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -4190,6 +4266,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -4206,7 +4286,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -4394,6 +4474,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -4410,7 +4494,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -4598,6 +4682,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -4637,7 +4725,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -4825,6 +4913,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -4841,7 +4933,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -5029,6 +5121,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -5045,7 +5141,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -5233,6 +5329,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -5281,6 +5381,10 @@ declare const entry: import("vue").Ref<{
             splitButtons?: /*elided*/ any[] | undefined;
             tabindex?: import("lkt-vue-kernel").ValidTabIndex;
             prop?: import("lkt-vue-kernel").LktObject | undefined;
+            aria?: {
+                controls?: string | undefined;
+                selected?: boolean | undefined;
+            } | undefined;
             clickRef?: (Element | import("vue").VueElement) | undefined;
             events?: {
                 click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -5297,7 +5401,7 @@ declare const entry: import("vue").Ref<{
             loading?: boolean | undefined;
             class?: string | undefined;
             containerClass?: string | undefined;
-            wrapContent?: boolean | undefined;
+            wrapButton?: boolean | undefined;
             text?: import("lkt-vue-kernel").ValidTextValue;
             icon?: string | {
                 icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -5421,7 +5525,7 @@ declare const entry: import("vue").Ref<{
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -5595,6 +5699,10 @@ declare const entry: import("vue").Ref<{
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -5611,7 +5719,7 @@ declare const entry: import("vue").Ref<{
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -5785,6 +5893,10 @@ declare const entry: import("vue").Ref<{
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -5801,7 +5913,7 @@ declare const entry: import("vue").Ref<{
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -5975,6 +6087,10 @@ declare const entry: import("vue").Ref<{
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -6037,7 +6153,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -6225,6 +6341,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -6241,7 +6361,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -6429,6 +6549,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -6445,7 +6569,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -6633,6 +6757,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -6672,7 +6800,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -6860,6 +6988,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -6876,7 +7008,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -7064,6 +7196,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -7080,7 +7216,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -7268,6 +7404,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -7316,6 +7456,10 @@ declare const entry: import("vue").Ref<{
             splitButtons?: /*elided*/ any[] | undefined;
             tabindex?: import("lkt-vue-kernel").ValidTabIndex;
             prop?: import("lkt-vue-kernel").LktObject | undefined;
+            aria?: {
+                controls?: string | undefined;
+                selected?: boolean | undefined;
+            } | undefined;
             clickRef?: (Element | import("vue").VueElement) | undefined;
             events?: {
                 click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -7332,7 +7476,7 @@ declare const entry: import("vue").Ref<{
             loading?: boolean | undefined;
             class?: string | undefined;
             containerClass?: string | undefined;
-            wrapContent?: boolean | undefined;
+            wrapButton?: boolean | undefined;
             text?: import("lkt-vue-kernel").ValidTextValue;
             icon?: string | {
                 icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -7456,7 +7600,7 @@ declare const entry: import("vue").Ref<{
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -7630,6 +7774,10 @@ declare const entry: import("vue").Ref<{
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -7646,7 +7794,7 @@ declare const entry: import("vue").Ref<{
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -7820,6 +7968,10 @@ declare const entry: import("vue").Ref<{
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -7836,7 +7988,7 @@ declare const entry: import("vue").Ref<{
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -8010,6 +8162,10 @@ declare const entry: import("vue").Ref<{
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -8072,7 +8228,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -8260,6 +8416,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -8276,7 +8436,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -8464,6 +8624,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -8480,7 +8644,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -8668,6 +8832,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -8707,7 +8875,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -8895,6 +9063,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -8911,7 +9083,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -9099,6 +9271,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -9115,7 +9291,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -9303,6 +9479,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -9351,6 +9531,10 @@ declare const entry: import("vue").Ref<{
             splitButtons?: /*elided*/ any[] | undefined;
             tabindex?: import("lkt-vue-kernel").ValidTabIndex;
             prop?: import("lkt-vue-kernel").LktObject | undefined;
+            aria?: {
+                controls?: string | undefined;
+                selected?: boolean | undefined;
+            } | undefined;
             clickRef?: (Element | import("vue").VueElement) | undefined;
             events?: {
                 click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -9418,7 +9602,7 @@ declare const entry: import("vue").Ref<{
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -9598,7 +9782,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -9772,6 +9956,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -9781,6 +9969,10 @@ declare const entry: import("vue").Ref<{
                 }[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -9797,7 +9989,7 @@ declare const entry: import("vue").Ref<{
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -9977,7 +10169,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -10151,6 +10343,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -10160,6 +10356,10 @@ declare const entry: import("vue").Ref<{
                 }[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -10176,7 +10376,7 @@ declare const entry: import("vue").Ref<{
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -10356,7 +10556,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -10530,6 +10730,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -10539,6 +10743,10 @@ declare const entry: import("vue").Ref<{
                 }[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -10577,7 +10785,7 @@ declare const entry: import("vue").Ref<{
         loading?: boolean | undefined;
         class?: string | undefined;
         containerClass?: string | undefined;
-        wrapContent?: boolean | undefined;
+        wrapButton?: boolean | undefined;
         text?: import("lkt-vue-kernel").ValidTextValue;
         icon?: string | {
             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -10701,7 +10909,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -10875,6 +11083,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -10891,7 +11103,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -11065,6 +11277,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -11081,7 +11297,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -11255,6 +11471,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -11317,7 +11537,7 @@ declare const entry: import("vue").Ref<{
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -11505,6 +11725,10 @@ declare const entry: import("vue").Ref<{
                 splitButtons?: /*elided*/ any[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -11521,7 +11745,7 @@ declare const entry: import("vue").Ref<{
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -11709,6 +11933,10 @@ declare const entry: import("vue").Ref<{
                 splitButtons?: /*elided*/ any[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -11725,7 +11953,7 @@ declare const entry: import("vue").Ref<{
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -11913,6 +12141,10 @@ declare const entry: import("vue").Ref<{
                 splitButtons?: /*elided*/ any[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -11952,7 +12184,7 @@ declare const entry: import("vue").Ref<{
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -12140,6 +12372,10 @@ declare const entry: import("vue").Ref<{
                 splitButtons?: /*elided*/ any[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -12156,7 +12392,7 @@ declare const entry: import("vue").Ref<{
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -12344,6 +12580,10 @@ declare const entry: import("vue").Ref<{
                 splitButtons?: /*elided*/ any[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -12360,7 +12600,7 @@ declare const entry: import("vue").Ref<{
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -12548,6 +12788,10 @@ declare const entry: import("vue").Ref<{
                 splitButtons?: /*elided*/ any[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -12596,6 +12840,10 @@ declare const entry: import("vue").Ref<{
         splitButtons?: /*elided*/ any[] | undefined;
         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
         prop?: import("lkt-vue-kernel").LktObject | undefined;
+        aria?: {
+            controls?: string | undefined;
+            selected?: boolean | undefined;
+        } | undefined;
         clickRef?: (Element | import("vue").VueElement) | undefined;
         events?: {
             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -12628,7 +12876,7 @@ declare const entry: import("vue").Ref<{
             loading?: boolean | undefined;
             class?: string | undefined;
             containerClass?: string | undefined;
-            wrapContent?: boolean | undefined;
+            wrapButton?: boolean | undefined;
             text?: import("lkt-vue-kernel").ValidTextValue;
             icon?: string | {
                 icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -12752,7 +13000,7 @@ declare const entry: import("vue").Ref<{
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -12926,6 +13174,10 @@ declare const entry: import("vue").Ref<{
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -12942,7 +13194,7 @@ declare const entry: import("vue").Ref<{
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -13116,6 +13368,10 @@ declare const entry: import("vue").Ref<{
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -13132,7 +13388,7 @@ declare const entry: import("vue").Ref<{
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -13306,6 +13562,10 @@ declare const entry: import("vue").Ref<{
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -13368,7 +13628,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -13556,6 +13816,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -13572,7 +13836,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -13760,6 +14024,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -13776,7 +14044,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -13964,6 +14232,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -14003,7 +14275,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -14191,6 +14463,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -14207,7 +14483,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -14395,6 +14671,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -14411,7 +14691,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -14599,6 +14879,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -14647,6 +14931,10 @@ declare const entry: import("vue").Ref<{
             splitButtons?: /*elided*/ any[] | undefined;
             tabindex?: import("lkt-vue-kernel").ValidTabIndex;
             prop?: import("lkt-vue-kernel").LktObject | undefined;
+            aria?: {
+                controls?: string | undefined;
+                selected?: boolean | undefined;
+            } | undefined;
             clickRef?: (Element | import("vue").VueElement) | undefined;
             events?: {
                 click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -14663,7 +14951,7 @@ declare const entry: import("vue").Ref<{
             loading?: boolean | undefined;
             class?: string | undefined;
             containerClass?: string | undefined;
-            wrapContent?: boolean | undefined;
+            wrapButton?: boolean | undefined;
             text?: import("lkt-vue-kernel").ValidTextValue;
             icon?: string | {
                 icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -14787,7 +15075,7 @@ declare const entry: import("vue").Ref<{
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -14961,6 +15249,10 @@ declare const entry: import("vue").Ref<{
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -14977,7 +15269,7 @@ declare const entry: import("vue").Ref<{
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -15151,6 +15443,10 @@ declare const entry: import("vue").Ref<{
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -15167,7 +15463,7 @@ declare const entry: import("vue").Ref<{
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -15341,6 +15637,10 @@ declare const entry: import("vue").Ref<{
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -15403,7 +15703,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -15591,6 +15891,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -15607,7 +15911,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -15795,6 +16099,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -15811,7 +16119,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -15999,6 +16307,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -16038,7 +16350,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -16226,6 +16538,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -16242,7 +16558,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -16430,6 +16746,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -16446,7 +16766,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -16634,6 +16954,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -16682,6 +17006,10 @@ declare const entry: import("vue").Ref<{
             splitButtons?: /*elided*/ any[] | undefined;
             tabindex?: import("lkt-vue-kernel").ValidTabIndex;
             prop?: import("lkt-vue-kernel").LktObject | undefined;
+            aria?: {
+                controls?: string | undefined;
+                selected?: boolean | undefined;
+            } | undefined;
             clickRef?: (Element | import("vue").VueElement) | undefined;
             events?: {
                 click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -16698,7 +17026,7 @@ declare const entry: import("vue").Ref<{
             loading?: boolean | undefined;
             class?: string | undefined;
             containerClass?: string | undefined;
-            wrapContent?: boolean | undefined;
+            wrapButton?: boolean | undefined;
             text?: import("lkt-vue-kernel").ValidTextValue;
             icon?: string | {
                 icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -16822,7 +17150,7 @@ declare const entry: import("vue").Ref<{
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -16996,6 +17324,10 @@ declare const entry: import("vue").Ref<{
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -17012,7 +17344,7 @@ declare const entry: import("vue").Ref<{
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -17186,6 +17518,10 @@ declare const entry: import("vue").Ref<{
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -17202,7 +17538,7 @@ declare const entry: import("vue").Ref<{
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -17376,6 +17712,10 @@ declare const entry: import("vue").Ref<{
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -17438,7 +17778,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -17626,6 +17966,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -17642,7 +17986,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -17830,6 +18174,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -17846,7 +18194,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -18034,6 +18382,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -18073,7 +18425,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -18261,6 +18613,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -18277,7 +18633,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -18465,6 +18821,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -18481,7 +18841,7 @@ declare const entry: import("vue").Ref<{
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -18669,6 +19029,10 @@ declare const entry: import("vue").Ref<{
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -18717,6 +19081,10 @@ declare const entry: import("vue").Ref<{
             splitButtons?: /*elided*/ any[] | undefined;
             tabindex?: import("lkt-vue-kernel").ValidTabIndex;
             prop?: import("lkt-vue-kernel").LktObject | undefined;
+            aria?: {
+                controls?: string | undefined;
+                selected?: boolean | undefined;
+            } | undefined;
             clickRef?: (Element | import("vue").VueElement) | undefined;
             events?: {
                 click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -18793,7 +19161,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -18973,7 +19341,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -19147,6 +19515,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -19156,6 +19528,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     }[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -19172,7 +19548,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -19352,7 +19728,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -19526,6 +19902,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -19535,6 +19915,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     }[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -19551,7 +19935,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -19731,7 +20115,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -19905,6 +20289,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -19914,6 +20302,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     }[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -19952,7 +20344,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
             loading?: boolean | undefined;
             class?: string | undefined;
             containerClass?: string | undefined;
-            wrapContent?: boolean | undefined;
+            wrapButton?: boolean | undefined;
             text?: import("lkt-vue-kernel").ValidTextValue;
             icon?: string | {
                 icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -20076,7 +20468,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -20250,6 +20642,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -20266,7 +20662,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -20440,6 +20836,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -20456,7 +20856,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -20630,6 +21030,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -20692,7 +21096,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -20880,6 +21284,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -20896,7 +21304,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -21084,6 +21492,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -21100,7 +21512,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -21288,6 +21700,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -21327,7 +21743,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -21515,6 +21931,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -21531,7 +21951,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -21719,6 +22139,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -21735,7 +22159,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     loading?: boolean | undefined;
                     class?: string | undefined;
                     containerClass?: string | undefined;
-                    wrapContent?: boolean | undefined;
+                    wrapButton?: boolean | undefined;
                     text?: import("lkt-vue-kernel").ValidTextValue;
                     icon?: string | {
                         icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -21923,6 +22347,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                     splitButtons?: /*elided*/ any[] | undefined;
                     tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                     prop?: import("lkt-vue-kernel").LktObject | undefined;
+                    aria?: {
+                        controls?: string | undefined;
+                        selected?: boolean | undefined;
+                    } | undefined;
                     clickRef?: (Element | import("vue").VueElement) | undefined;
                     events?: {
                         click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -21971,6 +22399,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
             splitButtons?: /*elided*/ any[] | undefined;
             tabindex?: import("lkt-vue-kernel").ValidTabIndex;
             prop?: import("lkt-vue-kernel").LktObject | undefined;
+            aria?: {
+                controls?: string | undefined;
+                selected?: boolean | undefined;
+            } | undefined;
             clickRef?: (Element | import("vue").VueElement) | undefined;
             events?: {
                 click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -22003,7 +22435,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -22127,7 +22559,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             loading?: boolean | undefined;
                             class?: string | undefined;
                             containerClass?: string | undefined;
-                            wrapContent?: boolean | undefined;
+                            wrapButton?: boolean | undefined;
                             text?: import("lkt-vue-kernel").ValidTextValue;
                             icon?: string | {
                                 icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -22301,6 +22733,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             splitButtons?: /*elided*/ any[] | undefined;
                             tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                             prop?: import("lkt-vue-kernel").LktObject | undefined;
+                            aria?: {
+                                controls?: string | undefined;
+                                selected?: boolean | undefined;
+                            } | undefined;
                             clickRef?: (Element | import("vue").VueElement) | undefined;
                             events?: {
                                 click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -22317,7 +22753,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             loading?: boolean | undefined;
                             class?: string | undefined;
                             containerClass?: string | undefined;
-                            wrapContent?: boolean | undefined;
+                            wrapButton?: boolean | undefined;
                             text?: import("lkt-vue-kernel").ValidTextValue;
                             icon?: string | {
                                 icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -22491,6 +22927,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             splitButtons?: /*elided*/ any[] | undefined;
                             tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                             prop?: import("lkt-vue-kernel").LktObject | undefined;
+                            aria?: {
+                                controls?: string | undefined;
+                                selected?: boolean | undefined;
+                            } | undefined;
                             clickRef?: (Element | import("vue").VueElement) | undefined;
                             events?: {
                                 click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -22507,7 +22947,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             loading?: boolean | undefined;
                             class?: string | undefined;
                             containerClass?: string | undefined;
-                            wrapContent?: boolean | undefined;
+                            wrapButton?: boolean | undefined;
                             text?: import("lkt-vue-kernel").ValidTextValue;
                             icon?: string | {
                                 icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -22681,6 +23121,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             splitButtons?: /*elided*/ any[] | undefined;
                             tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                             prop?: import("lkt-vue-kernel").LktObject | undefined;
+                            aria?: {
+                                controls?: string | undefined;
+                                selected?: boolean | undefined;
+                            } | undefined;
                             clickRef?: (Element | import("vue").VueElement) | undefined;
                             events?: {
                                 click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -22743,7 +23187,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -22931,6 +23375,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -22947,7 +23395,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -23135,6 +23583,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -23151,7 +23603,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -23339,6 +23791,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -23378,7 +23834,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -23566,6 +24022,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -23582,7 +24042,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -23770,6 +24230,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -23786,7 +24250,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -23974,6 +24438,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -24022,6 +24490,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                 splitButtons?: /*elided*/ any[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -24038,7 +24510,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -24162,7 +24634,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             loading?: boolean | undefined;
                             class?: string | undefined;
                             containerClass?: string | undefined;
-                            wrapContent?: boolean | undefined;
+                            wrapButton?: boolean | undefined;
                             text?: import("lkt-vue-kernel").ValidTextValue;
                             icon?: string | {
                                 icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -24336,6 +24808,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             splitButtons?: /*elided*/ any[] | undefined;
                             tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                             prop?: import("lkt-vue-kernel").LktObject | undefined;
+                            aria?: {
+                                controls?: string | undefined;
+                                selected?: boolean | undefined;
+                            } | undefined;
                             clickRef?: (Element | import("vue").VueElement) | undefined;
                             events?: {
                                 click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -24352,7 +24828,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             loading?: boolean | undefined;
                             class?: string | undefined;
                             containerClass?: string | undefined;
-                            wrapContent?: boolean | undefined;
+                            wrapButton?: boolean | undefined;
                             text?: import("lkt-vue-kernel").ValidTextValue;
                             icon?: string | {
                                 icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -24526,6 +25002,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             splitButtons?: /*elided*/ any[] | undefined;
                             tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                             prop?: import("lkt-vue-kernel").LktObject | undefined;
+                            aria?: {
+                                controls?: string | undefined;
+                                selected?: boolean | undefined;
+                            } | undefined;
                             clickRef?: (Element | import("vue").VueElement) | undefined;
                             events?: {
                                 click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -24542,7 +25022,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             loading?: boolean | undefined;
                             class?: string | undefined;
                             containerClass?: string | undefined;
-                            wrapContent?: boolean | undefined;
+                            wrapButton?: boolean | undefined;
                             text?: import("lkt-vue-kernel").ValidTextValue;
                             icon?: string | {
                                 icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -24716,6 +25196,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             splitButtons?: /*elided*/ any[] | undefined;
                             tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                             prop?: import("lkt-vue-kernel").LktObject | undefined;
+                            aria?: {
+                                controls?: string | undefined;
+                                selected?: boolean | undefined;
+                            } | undefined;
                             clickRef?: (Element | import("vue").VueElement) | undefined;
                             events?: {
                                 click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -24778,7 +25262,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -24966,6 +25450,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -24982,7 +25470,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -25170,6 +25658,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -25186,7 +25678,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -25374,6 +25866,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -25413,7 +25909,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -25601,6 +26097,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -25617,7 +26117,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -25805,6 +26305,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -25821,7 +26325,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -26009,6 +26513,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -26057,6 +26565,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                 splitButtons?: /*elided*/ any[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -26073,7 +26585,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                 loading?: boolean | undefined;
                 class?: string | undefined;
                 containerClass?: string | undefined;
-                wrapContent?: boolean | undefined;
+                wrapButton?: boolean | undefined;
                 text?: import("lkt-vue-kernel").ValidTextValue;
                 icon?: string | {
                     icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -26197,7 +26709,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             loading?: boolean | undefined;
                             class?: string | undefined;
                             containerClass?: string | undefined;
-                            wrapContent?: boolean | undefined;
+                            wrapButton?: boolean | undefined;
                             text?: import("lkt-vue-kernel").ValidTextValue;
                             icon?: string | {
                                 icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -26371,6 +26883,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             splitButtons?: /*elided*/ any[] | undefined;
                             tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                             prop?: import("lkt-vue-kernel").LktObject | undefined;
+                            aria?: {
+                                controls?: string | undefined;
+                                selected?: boolean | undefined;
+                            } | undefined;
                             clickRef?: (Element | import("vue").VueElement) | undefined;
                             events?: {
                                 click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -26387,7 +26903,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             loading?: boolean | undefined;
                             class?: string | undefined;
                             containerClass?: string | undefined;
-                            wrapContent?: boolean | undefined;
+                            wrapButton?: boolean | undefined;
                             text?: import("lkt-vue-kernel").ValidTextValue;
                             icon?: string | {
                                 icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -26561,6 +27077,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             splitButtons?: /*elided*/ any[] | undefined;
                             tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                             prop?: import("lkt-vue-kernel").LktObject | undefined;
+                            aria?: {
+                                controls?: string | undefined;
+                                selected?: boolean | undefined;
+                            } | undefined;
                             clickRef?: (Element | import("vue").VueElement) | undefined;
                             events?: {
                                 click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -26577,7 +27097,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             loading?: boolean | undefined;
                             class?: string | undefined;
                             containerClass?: string | undefined;
-                            wrapContent?: boolean | undefined;
+                            wrapButton?: boolean | undefined;
                             text?: import("lkt-vue-kernel").ValidTextValue;
                             icon?: string | {
                                 icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -26751,6 +27271,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                             splitButtons?: /*elided*/ any[] | undefined;
                             tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                             prop?: import("lkt-vue-kernel").LktObject | undefined;
+                            aria?: {
+                                controls?: string | undefined;
+                                selected?: boolean | undefined;
+                            } | undefined;
                             clickRef?: (Element | import("vue").VueElement) | undefined;
                             events?: {
                                 click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -26813,7 +27337,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -27001,6 +27525,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -27017,7 +27545,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -27205,6 +27733,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -27221,7 +27753,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -27409,6 +27941,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -27448,7 +27984,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -27636,6 +28172,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -27652,7 +28192,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -27840,6 +28380,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -27856,7 +28400,7 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         loading?: boolean | undefined;
                         class?: string | undefined;
                         containerClass?: string | undefined;
-                        wrapContent?: boolean | undefined;
+                        wrapButton?: boolean | undefined;
                         text?: import("lkt-vue-kernel").ValidTextValue;
                         icon?: string | {
                             icon?: import("lkt-vue-kernel").ValidTextValue | (() => string);
@@ -28044,6 +28588,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                         splitButtons?: /*elided*/ any[] | undefined;
                         tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                         prop?: import("lkt-vue-kernel").LktObject | undefined;
+                        aria?: {
+                            controls?: string | undefined;
+                            selected?: boolean | undefined;
+                        } | undefined;
                         clickRef?: (Element | import("vue").VueElement) | undefined;
                         events?: {
                             click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;
@@ -28092,6 +28640,10 @@ declare var __VLS_5: {}, __VLS_7: {}, __VLS_26: string, __VLS_27: {
                 splitButtons?: /*elided*/ any[] | undefined;
                 tabindex?: import("lkt-vue-kernel").ValidTabIndex;
                 prop?: import("lkt-vue-kernel").LktObject | undefined;
+                aria?: {
+                    controls?: string | undefined;
+                    selected?: boolean | undefined;
+                } | undefined;
                 clickRef?: (Element | import("vue").VueElement) | undefined;
                 events?: {
                     click?: ((data: import("lkt-vue-kernel").ClickEventArgs) => void | undefined) | undefined;

@@ -1,24 +1,24 @@
-import { defineComponent as Q, ref as T, useSlots as X, computed as d, watch as S, onMounted as Y, resolveComponent as I, createElementBlock as c, openBlock as s, normalizeClass as g, createElementVNode as _, createCommentVNode as f, createBlock as y, unref as p, normalizeProps as H, mergeProps as j, createSlots as q, withCtx as h, renderSlot as k, toDisplayString as x, resolveDynamicComponent as ee, Fragment as Z, renderList as P, mergeDefaults as te } from "vue";
-import { MenuEntryType as R, MenuController as W, MenuType as le, getDefaultValues as ne, Menu as oe } from "lkt-vue-kernel";
+import { defineComponent as X, ref as T, useSlots as Y, computed as r, watch as S, onMounted as Z, resolveComponent as E, createElementBlock as d, openBlock as u, normalizeClass as g, createElementVNode as _, createCommentVNode as f, createBlock as y, unref as p, normalizeProps as H, mergeProps as I, createSlots as q, withCtx as h, renderSlot as k, toDisplayString as ee, resolveDynamicComponent as te, Fragment as x, renderList as j, mergeDefaults as le } from "vue";
+import { MenuEntryType as R, MenuController as W, MenuType as Q, getDefaultValues as ne, Menu as oe } from "lkt-vue-kernel";
 import { useRouter as ue } from "vue-router";
 import { DataState as se } from "lkt-data-state";
-import { httpCall as ae } from "lkt-http-client";
-const G = (a, V) => (V.forEach((o) => {
-  o.key && !a.includes(o.key) && a.push(o.key), o.children && o.children.length > 0 && G(a, o.children);
-}), a), U = class U {
+import { httpCall as ie } from "lkt-http-client";
+const G = (s, V) => (V.forEach((o) => {
+  o.key && !s.includes(o.key) && s.push(o.key), o.children && o.children.length > 0 && G(s, o.children);
+}), s), L = class L {
 };
-U.toggleSlot = "", U.debugEnabled = !1;
-let M = U;
-const ie = { class: "lkt-menu-entry-main" }, re = { class: "lkt-entry-content" }, ce = {
+L.toggleSlot = "", L.debugEnabled = !1;
+let M = L;
+const ae = ["id"], re = { class: "lkt-menu-entry-main" }, ce = { class: "lkt-entry-content" }, de = {
   key: 0,
   class: "lkt-menu-entry-icon"
-}, de = {
+}, pe = {
   key: 1,
   class: "lkt-menu-entry-text"
-}, pe = {
+}, ve = {
   key: 0,
   class: "lkt-menu-entry-children"
-}, ve = /* @__PURE__ */ Q({
+}, me = /* @__PURE__ */ X({
   __name: "MenuItem",
   props: {
     modelValue: { default: () => ({}) }
@@ -26,125 +26,126 @@ const ie = { class: "lkt-menu-entry-main" }, re = { class: "lkt-entry-content" }
   emits: [
     "update:modelValue"
   ],
-  setup(a, { emit: V }) {
-    const o = V, v = a, e = T(v.modelValue), r = X(), i = ue(), A = T(!1), K = () => {
+  setup(s, { emit: V }) {
+    const o = V, v = s, e = T(v.modelValue), c = Y(), a = ue(), A = T(!1), K = () => {
       e.value.isOpened = !e.value.isOpened;
-    }, C = () => {
-      var t, n;
-      return typeof e.value.children < "u" && ((t = e.value.children) == null ? void 0 : t.length) > 0 && !e.value.keepOpenOnChildClick && K(), typeof ((n = e.value.events) == null ? void 0 : n.click) == "function" && e.value.events.click({
+    }, b = () => {
+      var t, l;
+      return typeof e.value.children < "u" && ((t = e.value.children) == null ? void 0 : t.length) > 0 && !e.value.keepOpenOnChildClick && K(), typeof ((l = e.value.events) == null ? void 0 : l.click) == "function" && e.value.events.click({
         entry: e.value
       }), 1;
-    }, D = d(() => r["icon-" + e.value.key] || e.value.icon !== ""), w = d(() => {
+    }, D = r(() => c["icon-" + e.value.key] || e.value.icon !== ""), P = r(() => {
       let t = [];
       return D.value && t.push("has-icon"), A.value && t.push("is-active"), e.value.type && t.push(`is-${e.value.type}`), t.join(" ");
-    }), F = d(() => {
-      var n;
-      return G([], ((n = e.value) == null ? void 0 : n.children) ?? []);
-    }), J = d(() => {
+    }), U = r(() => {
+      var l;
+      return G([], ((l = e.value) == null ? void 0 : l.children) ?? []);
+    }), w = r(() => {
       let t = [];
-      for (let n in r)
-        n.startsWith("icon-") && F.value.includes(n.substring(5)) && t.push(n);
+      for (let l in c)
+        l.startsWith("icon-") && U.value.includes(l.substring(5)) && t.push(l);
       return t;
-    }), N = d(() => e.value.isActive ? !0 : typeof e.value.isActiveChecker == "function" ? !!e.value.isActiveChecker({
+    }), F = r(() => e.value.isActive ? !0 : typeof e.value.isActiveChecker == "function" ? !!e.value.isActiveChecker({
       entry: e.value
-    }) : !1), l = d(() => !!M.toggleSlot), u = d(() => M.toggleSlot);
+    }) : !1), N = r(() => !!M.toggleSlot), n = r(() => M.toggleSlot);
     return S(() => v.modelValue, (t) => {
       e.value = t;
     }, { deep: !0 }), S(e, (t) => {
       o("update:modelValue", t);
-    }, { deep: !0 }), Y(() => {
-      var n, m, B;
-      let t = i == null ? void 0 : i.currentRoute;
+    }, { deep: !0 }), Z(() => {
+      var l, i, m;
+      let t = a == null ? void 0 : a.currentRoute;
       if (t) {
-        if (t.value.path === ((n = e.value.anchor) == null ? void 0 : n.to))
+        if (t.value.path === ((l = e.value.anchor) == null ? void 0 : l.to))
           e.value.isOpened = !0;
-        else if (typeof e.value.children < "u" && ((m = e.value.children) == null ? void 0 : m.length) > 0) {
-          let O = !1;
-          (B = e.value.children) == null || B.forEach((L) => {
-            var b;
-            t.value.path === ((b = L.anchor) == null ? void 0 : b.to) && (O = !0);
-          }), O && (e.value.isOpened = !0);
+        else if (typeof e.value.children < "u" && ((i = e.value.children) == null ? void 0 : i.length) > 0) {
+          let C = !1;
+          (m = e.value.children) == null || m.forEach((J) => {
+            var $;
+            t.value.path === (($ = J.anchor) == null ? void 0 : $.to) && (C = !0);
+          }), C && (e.value.isOpened = !0);
         }
       }
-    }), (t, n) => {
-      var b;
-      const m = I("lkt-button"), B = I("lkt-header"), O = I("lkt-anchor"), L = I("menu-item", !0);
-      return s(), c("div", {
-        class: g(["lkt-menu-entry", w.value])
+    }), (t, l) => {
+      var $;
+      const i = E("lkt-button"), m = E("lkt-header"), C = E("lkt-anchor"), J = E("menu-item", !0);
+      return u(), d("div", {
+        class: g(["lkt-menu-entry", P.value]),
+        id: `entry-${e.value.key}`
       }, [
-        _("div", ie, [
-          e.value.type === p(R).Button ? (s(), y(m, H(j({ key: 0 }, e.value.button)), q({ _: 2 }, [
-            p(r).tooltip ? {
+        _("div", re, [
+          e.value.type === p(R).Button ? (u(), y(i, H(I({ key: 0 }, e.value.button)), q({ _: 2 }, [
+            p(c).tooltip ? {
               name: "tooltip",
               fn: h(() => [
                 k(t.$slots, "tooltip")
               ]),
               key: "0"
             } : void 0,
-            p(r).split ? {
+            p(c).split ? {
               name: "split",
               fn: h(() => [
                 k(t.$slots, "split")
               ]),
               key: "1"
             } : void 0
-          ]), 1040)) : e.value.type === p(R).Header ? (s(), y(B, H(j({ key: 1 }, e.value.header)), null, 16)) : e.value.type === p(R).Anchor ? (s(), y(O, H(j({ key: 2 }, e.value.anchor)), null, 16)) : (s(), y(O, j({ key: 3 }, e.value.anchor, {
-            "on-click": C,
-            "is-active": N.value,
-            onActive: n[0] || (n[0] = ($) => A.value = $)
+          ]), 1040)) : e.value.type === p(R).Header ? (u(), y(m, H(I({ key: 1 }, e.value.header)), null, 16)) : e.value.type === p(R).Anchor ? (u(), y(C, H(I({ key: 2 }, e.value.anchor)), null, 16)) : (u(), y(C, I({ key: 3 }, e.value.anchor, {
+            "on-click": b,
+            "is-active": F.value,
+            onActive: l[0] || (l[0] = (O) => A.value = O)
           }), {
-            text: h(({ text: $ }) => [
-              _("div", re, [
-                D.value ? (s(), c("div", ce, [
-                  p(r)["icon-" + e.value.key] ? k(t.$slots, "icon-" + e.value.key, {
+            text: h(({ text: O }) => [
+              _("div", ce, [
+                D.value ? (u(), d("div", de, [
+                  p(c)["icon-" + e.value.key] ? k(t.$slots, "icon-" + e.value.key, {
                     key: e.value.key,
                     entry: e.value
-                  }) : e.value.icon !== "" ? (s(), c("i", {
+                  }) : e.value.icon !== "" ? (u(), d("i", {
                     key: 1,
                     class: g(e.value.icon)
                   }, null, 2)) : f("", !0)
                 ])) : f("", !0),
-                $ !== "" ? (s(), c("div", de, x($), 1)) : f("", !0)
+                O !== "" ? (u(), d("div", pe, ee(O), 1)) : f("", !0)
               ])
             ]),
             _: 3
           }, 16, ["is-active"])),
-          e.value.type !== p(R).Button && e.value.children && ((b = e.value.children) == null ? void 0 : b.length) > 0 ? (s(), c("div", {
+          e.value.type !== p(R).Button && e.value.children && (($ = e.value.children) == null ? void 0 : $.length) > 0 ? (u(), d("div", {
             key: 4,
             class: "lkt-menu-entry-toggle",
             onClick: K
           }, [
-            l.value ? (s(), y(ee(u.value), {
+            N.value ? (u(), y(te(n.value), {
               key: 0,
               class: g(["lkt-menu-entry-toggle-inner", e.value.isOpened ? "is-opened" : ""])
-            }, null, 8, ["class"])) : (s(), c("div", {
+            }, null, 8, ["class"])) : (u(), d("div", {
               key: 1,
               class: g(["lkt-menu-entry-toggle-inner", e.value.isOpened ? "is-opened" : ""])
-            }, n[1] || (n[1] = [
+            }, l[1] || (l[1] = [
               _("i", { class: "lkt-icn-angle-bottom" }, null, -1)
             ]), 2))
           ])) : f("", !0)
         ]),
-        e.value.isOpened ? (s(), c("div", pe, [
-          (s(!0), c(Z, null, P(e.value.children, ($, z) => (s(), y(L, {
+        e.value.isOpened ? (u(), d("div", ve, [
+          (u(!0), d(x, null, j(e.value.children, (O, z) => (u(), y(J, {
             modelValue: e.value.children[z],
-            "onUpdate:modelValue": (E) => e.value.children[z] = E,
+            "onUpdate:modelValue": (B) => e.value.children[z] = B,
             key: e.value.children[z].key
           }, q({ _: 2 }, [
-            P(J.value, (E) => ({
-              name: E,
+            j(w.value, (B) => ({
+              name: B,
               fn: h(() => [
-                k(t.$slots, E)
+                k(t.$slots, B)
               ])
             }))
           ]), 1032, ["modelValue", "onUpdate:modelValue"]))), 128))
         ])) : f("", !0)
-      ], 2);
+      ], 10, ae);
     };
   }
-}), me = { class: "lkt-menu-main" }, ke = { class: "lkt-menu-entries" }, ye = /* @__PURE__ */ Q({
+}), ke = ["role"], ye = { class: "lkt-menu-main" }, he = { class: "lkt-menu-entries" }, fe = /* @__PURE__ */ X({
   __name: "LktMenu",
-  props: /* @__PURE__ */ te({
+  props: /* @__PURE__ */ le({
     modelValue: {},
     type: {},
     menuKey: { type: [String, Number, Function] },
@@ -160,76 +161,81 @@ const ie = { class: "lkt-menu-entry-main" }, re = { class: "lkt-entry-content" }
     "response",
     "error"
   ],
-  setup(a, { emit: V }) {
+  setup(s, { emit: V }) {
     var N;
-    const o = a, v = V, e = T(!1), r = X(), i = T(o.modelValue), A = (l) => {
-      let u = {};
-      typeof l == "object" && Object.keys(l).length > 0 && (u = JSON.parse(JSON.stringify(l)));
-      for (let t in u)
-        (Array.isArray(u[t]) || typeof u[t] == "object") && (u[t] = JSON.stringify(u[t]));
-      return u;
+    const o = s, v = V, e = T(!1), c = Y(), a = T(o.modelValue), A = (n) => {
+      let t = {};
+      typeof n == "object" && Object.keys(n).length > 0 && (t = JSON.parse(JSON.stringify(n)));
+      for (let l in t)
+        (Array.isArray(t[l]) || typeof t[l] == "object") && (t[l] = JSON.stringify(t[l]));
+      return t;
     };
-    S(() => W.config.value, (l) => {
+    S(() => W.config.value, (n) => {
     }, { deep: !0 });
-    const K = d(() => {
-      let l = [
+    const K = r(() => {
+      let n = [
         `type-${o.type}`
       ];
-      return o.menuKey && l.push(o.menuKey), e.value && l.push("is-visible"), o.type === le.Hidden && l.push(`${o.hiddenPosition}-hidden`), l.join(" ");
+      return o.menuKey && n.push(o.menuKey), e.value && n.push("is-visible"), o.type === Q.Hidden && n.push(`${o.hiddenPosition}-hidden`), n.join(" ");
     });
-    let C = new se({});
-    C.increment(A(((N = o.http) == null ? void 0 : N.data) ?? {}));
-    const D = d(() => G([], i.value)), w = d(() => {
-      let l = [];
-      for (let u in r)
-        u.startsWith("icon-") && D.value.includes(u.substring(5)) && l.push(u);
-      return l;
-    }), F = () => {
-      var u, t;
-      if (!((u = o.http) != null && u.resource)) return;
-      let l = C.getData();
-      v("loading"), ae((t = o.http) == null ? void 0 : t.resource, l).then((n) => {
-        C.turnStoredIntoOriginal(), i.value = n.data, v("results", n.data), v("response", n);
-      }).catch((n) => {
-        v("error", n);
+    let b = new se({});
+    b.increment(A(((N = o.http) == null ? void 0 : N.data) ?? {}));
+    const D = r(() => G([], a.value)), P = r(() => {
+      let n = [];
+      for (let t in c)
+        t.startsWith("icon-") && D.value.includes(t.substring(5)) && n.push(t);
+      return n;
+    }), U = () => {
+      var t, l;
+      if (!((t = o.http) != null && t.resource)) return;
+      let n = b.getData();
+      v("loading"), ie((l = o.http) == null ? void 0 : l.resource, n).then((i) => {
+        b.turnStoredIntoOriginal(), a.value = i.data, v("results", i.data), v("response", i);
+      }).catch((i) => {
+        v("error", i);
       });
-    }, J = () => {
+    }, w = () => {
       o.closeOnClickOutside && W.closeMenu(o.menuKey), v("click-outside");
     };
-    return S(() => o.modelValue, (l) => {
-      i.value = l;
-    }, { deep: !0 }), S(i, (l) => {
-      v("update:modelValue", l);
-    }, { deep: !0 }), Y(() => {
-      W.addMenu(o.menuKey, e), F();
-    }), (l, u) => (s(), c("div", {
-      class: g(["lkt-menu", K.value])
+    S(() => o.modelValue, (n) => {
+      a.value = n;
+    }, { deep: !0 }), S(a, (n) => {
+      v("update:modelValue", n);
+    }, { deep: !0 }), Z(() => {
+      W.addMenu(o.menuKey, e), U();
+    });
+    const F = r(() => {
+      if (o.type === Q.TabList) return "tablist";
+    });
+    return (n, t) => (u(), d("div", {
+      class: g(["lkt-menu", K.value]),
+      role: F.value
     }, [
-      _("div", me, [
-        p(r).before ? k(l.$slots, "before", { key: 0 }) : f("", !0),
-        _("div", ke, [
-          (s(!0), c(Z, null, P(i.value, (t, n) => (s(), y(ve, {
-            modelValue: i.value[n],
-            "onUpdate:modelValue": (m) => i.value[n] = m,
-            class: g(t.class)
+      _("div", ye, [
+        p(c).before ? k(n.$slots, "before", { key: 0 }) : f("", !0),
+        _("div", he, [
+          (u(!0), d(x, null, j(a.value, (l, i) => (u(), y(me, {
+            modelValue: a.value[i],
+            "onUpdate:modelValue": (m) => a.value[i] = m,
+            class: g(l.class)
           }, q({ _: 2 }, [
-            P(w.value, (m) => ({
+            j(P.value, (m) => ({
               name: m,
               fn: h(() => [
-                k(l.$slots, m)
+                k(n.$slots, m)
               ])
             })),
-            p(r)[`tooltip-${t.key}`] ? {
+            p(c)[`tooltip-${l.key}`] ? {
               name: "tooltip",
               fn: h(() => [
-                k(l.$slots, `tooltip-${t.key}`)
+                k(n.$slots, `tooltip-${l.key}`)
               ]),
               key: "0"
             } : void 0,
-            p(r)[`split-${t.key}`] ? {
+            p(c)[`split-${l.key}`] ? {
               name: "split",
               fn: h(() => [
-                k(l.$slots, `split-${t.key}`)
+                k(n.$slots, `split-${l.key}`)
               ]),
               key: "1"
             } : void 0
@@ -238,16 +244,16 @@ const ie = { class: "lkt-menu-entry-main" }, re = { class: "lkt-entry-content" }
       ]),
       _("div", {
         class: "lkt-menu-outside",
-        onClick: J
+        onClick: w
       })
-    ], 2));
+    ], 10, ke));
   }
-}), Ce = {
-  install: (a) => {
-    a.component("lkt-menu") === void 0 && a.component("lkt-menu", ye);
+}), $e = {
+  install: (s) => {
+    s.component("lkt-menu") === void 0 && s.component("lkt-menu", fe);
   }
-}, Oe = (a) => (M.toggleSlot = a, !0);
+}, Oe = (s) => (M.toggleSlot = s, !0);
 export {
-  Ce as default,
+  $e as default,
   Oe as setMenuToggleSlot
 };

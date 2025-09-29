@@ -18,7 +18,7 @@
     --lkt-menu--background: #ffffff;
     --lkt-menu--toggle--color: #444444;
 
-    /** Sizing: Entries */
+    /** Sizing: Entry */
     --lkt-menu--entry--padding: 15px;
     --lkt-menu--text--padding: 0 0 0 30px;
     --lkt-menu--text-with-icon--padding: 0;
@@ -40,4 +40,12 @@
     --lkt-menu--container--background: transparent;
     --lkt-menu--container--transition: all linear 100ms;
     --lkt-menu--container--max-height: 100%;
+    --lkt-menu--container--flex-direction: column;
+    --lkt-menu--container--align-items: stretch;
+
+    /** Element: Entries */
+    --lkt-menu--entries--width: 100%;
+    --lkt-menu--entries--background: transparent;
+    --lkt-menu--entries--flex-direction: column;
+    --lkt-menu--entries--align-items: stretch;
 }

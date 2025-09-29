@@ -3,6 +3,8 @@
     overflow: auto;
     max-height: var(--lkt-menu--container--max-height);
     display: flex;
+    flex-direction: var(--lkt-menu--container--flex-direction);
+    align-items: var(--lkt-menu--container--align-items);
 }
 
 .lkt-menu-main {
@@ -37,6 +39,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.lkt-menu-entries {
+    align-items: var(--lkt-menu--entries--align-items);
+    background: var(--lkt-menu--entries--background);
+    display: flex;
+    flex-direction: var(--lkt-menu--entries--flex-direction);
+    width: var(--lkt-menu--entries--width);
 }
 
 .lkt-menu-entry {

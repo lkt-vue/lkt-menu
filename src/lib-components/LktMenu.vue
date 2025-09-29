@@ -110,10 +110,16 @@
         MenuController.addMenu(props.menuKey, isVisible)
         loadResource();
     })
+
+
+    const computedRole = computed(() => {
+        if (props.type === MenuType.TabList) return 'tablist';
+        return undefined;
+    })
 </script>
 
 <template>
-    <div class="lkt-menu" :class="computedClassName">
+    <div class="lkt-menu" :class="computedClassName" :role="computedRole">
         <div class="lkt-menu-main">
             <template v-if="slots.before">
                 <slot name="before"/>
