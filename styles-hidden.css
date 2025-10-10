@@ -1,11 +1,23 @@
 .lkt-menu.type-hidden {
     position: fixed;
-    top: var(--lkt-menu--container--top);
-    bottom: var(--lkt-menu--container--bottom);
     width: 100%;
     background: var(--lkt-menu--container--background);
     transition: var(--lkt-menu--container--transition);
     z-index: 400;
+}
+
+.lkt-menu.type-hidden.left-hidden,
+.lkt-menu.type-hidden.right-hidden
+{
+    top: var(--lkt-menu--container--top);
+    bottom: var(--lkt-menu--container--bottom);
+}
+
+.lkt-menu.type-hidden.bottom-hidden,
+.lkt-menu.type-hidden.top-hidden
+{
+    left: var(--lkt-menu--container--left);
+    right: var(--lkt-menu--container--right);
 }
 
 .lkt-menu.type-hidden .lkt-menu-main {
@@ -46,4 +58,27 @@
 
 .lkt-menu.type-hidden.right-hidden.is-visible {
     right: 0;
+}
+
+/**
+ * Bottom hidden
+ */
+.lkt-menu.type-hidden.bottom-hidden {
+    justify-content: flex-end;
+    bottom: -100%;
+}
+
+.lkt-menu.type-hidden.bottom-hidden.is-visible {
+    bottom: 0;
+}
+
+/**
+ * Bottom hidden
+ */
+.lkt-menu.type-hidden.top-hidden {
+    top: -100%;
+}
+
+.lkt-menu.type-hidden.top-hidden.is-visible {
+    top: 0;
 }
