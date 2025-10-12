@@ -29,6 +29,8 @@
 
     /** Colors: Outside */
     --lkt-menu--outside--background: rgba(255, 255, 255, 0.75);
+    --lkt-menu--outside--hidden--opacity: 0;
+    --lkt-menu--outside--visible--opacity: 1;
 
     /** Event: Hover */
     --lkt-menu--hover--text-decoration: none;

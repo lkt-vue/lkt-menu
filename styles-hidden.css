@@ -29,12 +29,12 @@
 }
 
 .lkt-menu.type-hidden .lkt-menu-outside {
-    opacity: 0;
+    opacity: var(--lkt-menu--outside--hidden--opacity);
     transition: all linear 400ms 100ms;
 }
 
 .lkt-menu.type-hidden.is-visible .lkt-menu-outside {
-    opacity: 1;
+    opacity: var(--lkt-menu--outside--visible--opacity);
 }
 
 /**
@@ -69,7 +69,13 @@
 }
 
 .lkt-menu.type-hidden.bottom-hidden.is-visible {
-    bottom: 0;
+    bottom: var(--lkt-menu--container--bottom);
+    top: var(--lkt-menu--container--top);
+}
+
+.lkt-menu.type-hidden.bottom-hidden .lkt-menu-main {
+    margin-top: auto;
+    height: auto;
 }
 
 /**
@@ -80,5 +86,5 @@
 }
 
 .lkt-menu.type-hidden.top-hidden.is-visible {
-    top: 0;
+    top: var(--lkt-menu--container--top);
 }
