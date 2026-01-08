@@ -125,7 +125,7 @@
                 <slot name="before"/>
             </template>
             <div class="lkt-menu-entries">
-                <menu-item v-for="(entry, i) in entries" v-model="entries[i]" :class="entry.class">
+                <menu-item v-for="(entry, i) in entries" v-model="entries[i]" :class="entry.class" :menu-key="menuKey" :close-on-click-entry="closeOnClickEntry">
                     <template v-for="slot in entryIconSlots" v-slot:[slot]>
                         <slot :name="slot" />
                     </template>

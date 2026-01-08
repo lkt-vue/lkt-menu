@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import { MenuEntryConfig, MenuEntryType } from 'lkt-vue-kernel';
+    import { AnchorConfig, ClickEventArgs, MenuController, MenuEntryConfig, MenuEntryType } from 'lkt-vue-kernel';
     import { computed, onMounted, ref, useSlots, watch } from 'vue';
     import { fetchKeys } from '../functions/helpers';
     import { useRouter } from 'vue-router';
@@ -10,7 +10,9 @@
     ]);
 
     const props = withDefaults(defineProps<{
-        modelValue?: MenuEntryConfig
+        modelValue?: MenuEntryConfig,
+        menuKey?: string
+        closeOnClickEntry?: boolean
     }>(), {
         modelValue: () => ({}),
     });
@@ -129,11 +131,26 @@
 
             <lkt-anchor
                 v-else-if="entry.type === MenuEntryType.Anchor"
-                v-bind="entry.anchor"
+                v-bind="{
+                    ...entry.anchor
+                }"
             />
             <lkt-anchor
                 v-else
-                v-bind="entry.anchor"
+                v-bind="<AnchorConfig>{
+                    ...entry.anchor,
+                    events: {
+                        ...entry.anchor.events,
+                        click: (data: ClickEventArgs) => {
+
+                            if(closeOnClickEntry) MenuController.closeMenu(props.menuKey)
+
+                            if(typeof entry.anchor?.events?.click === 'function'){
+                                entry.anchor?.events?.click(data);
+                            }
+                        }
+                    }
+                }"
                 :on-click="onClick"
                 :is-active="computedIsActive"
                 @active="($e: any) => isActive = $e"
