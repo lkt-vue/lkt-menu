@@ -140,6 +140,6 @@
                 </menu-item>
             </div>
         </div>
-        <div class="lkt-menu-outside" v-on:click="onClickOutside" />
+        <div class="lkt-menu-outside" v-if="renderOutside" v-on:click="onClickOutside" />
     </div>
 </template>
